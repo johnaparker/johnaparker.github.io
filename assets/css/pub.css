@@ -1,0 +1,57 @@
+.pub {
+    width: auto;
+    border: 0px solid grey;
+    border-radius: 25px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.pub img {
+    margin-right: 15px;
+    float: left;
+    border: 2px solid grey;
+    border-radius: 25px;
+    width: 12%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .pub img {
+        margin-right: 15px;
+        float: left;
+        border: 2px solid grey;
+        border-radius: 25px;
+        width: 30%;
+        height: auto;
+    }
+}
+
+.pub h4 {
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+    font-size: .8em;
+    a {
+      color: red;
+    }
+}
+
+.pub p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+    font-size: .7em;
+}
+
+.pub a{
+  text-decoration: none;
+  color: black;
+
+}
+
+.pub a:hover {
+  text-decoration: none;
+  color: #4db8ff;
+}

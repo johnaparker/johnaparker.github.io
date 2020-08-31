@@ -1,0 +1,45 @@
+.entry {
+    width: auto;
+    border: 0px solid grey;
+    border-radius: 25px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.entry img {
+    margin-right: 15px;
+    float: left;
+    border: 2px solid grey;
+    border-radius: 25px;
+    width: 20%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .entry img {
+        margin-right: 15px;
+        float: left;
+        border: 2px solid grey;
+        border-radius: 25px;
+        width: 30%;
+        height: auto;
+    }
+}
+
+.entry h4 {
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.entry p{
+    margin-left: 15px;
+    display: block;
+    margin: 2px 0 0 0;
+    overflow: hidden;
+    text-align: justify;
+    font-size: .7em;
+}

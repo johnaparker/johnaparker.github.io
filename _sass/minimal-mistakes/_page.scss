@@ -108,7 +108,7 @@ body {
   p,
   li,
   dl {
-    font-size: 1em;
+    font-size: .8em;
   }
 
   /* paragraph indents */
@@ -126,10 +126,10 @@ body {
 
   a:not(.btn) {
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
 
       img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
+        box-shadow: 0 0 10px rgba(#000, 1);
       }
     }
   }
