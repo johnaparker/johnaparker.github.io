@@ -94,7 +94,7 @@ analytics:
 # Site Author
 author:
   name             : "John Parker, PhD"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/img/IMG_1581.png"
   bio              : "Computational physicist"
   location         : "Chicago"
   email            : "john7494@gmail.com"

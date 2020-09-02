@@ -4,7 +4,7 @@ permalink: /presentations/dissertation
 # Collective electrodynamic excitations and non-conservative dynamics in optical matter and meta-atom systems
 
 ##### Download presentation
-[Powerpoint](https://jparker.nyc3.digitaloceanspaces.com/john_parker_thesis_defense.pptx)
+[PowerPoint](https://jparker.nyc3.digitaloceanspaces.com/john_parker_thesis_defense.pptx)
 
 ##### Abstract
 

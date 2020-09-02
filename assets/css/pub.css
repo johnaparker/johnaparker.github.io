@@ -15,7 +15,7 @@
     height: auto;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 5in) {
     .pub img {
         margin-right: 15px;
         float: left;
@@ -54,4 +54,25 @@
 .pub a:hover {
   text-decoration: none;
   color: #4db8ff;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  color: black;
+  padding: 2px 10px;
+  text-color: rgba(0,0,0,1);
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.button:hover {
+  background-color: rgba(230,230,230,1);
+}
+
+.button a{
+  text-decoration: none;
+  color: black;
 }
