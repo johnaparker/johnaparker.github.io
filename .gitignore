@@ -32,3 +32,4 @@ _site
 *.h5
 
 _code/
+.push_local.sh
