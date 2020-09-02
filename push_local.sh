@@ -5,5 +5,5 @@ git checkout gh-pages
 git add _site
 cp -r _site/* .
 git commit -am "built site locally"
-git push
+git push origin gh-pages --no-verify
 git checkout master
