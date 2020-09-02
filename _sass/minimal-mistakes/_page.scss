@@ -557,3 +557,10 @@ body {
     }
   }
 }
+
+body .gist .gist-file {
+    border: 1px solid black;
+    padding-left: 25px !important;
+    background-color: white;
+}
+
