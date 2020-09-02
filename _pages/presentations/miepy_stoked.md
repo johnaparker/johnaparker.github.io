@@ -1,8 +1,8 @@
 ---
 permalink: /presentations/miepy_stoked
+title: "Interactive tutorial for Miepy and Stoked software"
 ---
 
-# Interactive tutorial for Miepy and Stoked software
 
 ![](/assets/img/pres_miepy_stoked.png)
 

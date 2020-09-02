@@ -1,10 +1,7 @@
 ---
 permalink: /presentations/dissertation
+title: "Collective electrodynamic excitations and non-conservative dynamics in optical matter and meta-atom systems"
 ---
-# Collective electrodynamic excitations and non-conservative dynamics in optical matter and meta-atom systems
-
-##### Download presentation
-[PowerPoint](https://jparker.nyc3.digitaloceanspaces.com/john_parker_thesis_defense.pptx)
 
 ##### Abstract
 
@@ -13,3 +10,6 @@ Optical trapping and optical tweezers have been used to confine and control micr
 
 In this talk, I will demonstrate the fundamental properties and applications of optical matter and use them to design functional materials that can do work at the nano-scale. Non conservative interactions will be shown to give rise to a non-reciprocal net-force in an optically bound hetero-dimer. More generally, when there are many identical particles forming an array, a single intruder particle is expelled from the array due to non-reciprocal interactions. This principle is used to segregate mixtures of optically trapped nanoparticles by their size and material. By tuning the properties of the optical trap, the steady-state behavior of the optical matter system can be controlled and used to create an optical matter array that operate as a stochastic machine. This machine operates by converting the incident spin angular momentum of light into scattered orbital angular momentum, which is then coupled into a probe particle that experiences a non-conservative driving force in the presence of Brownian forces.
 {: style="text-align: justify;"}
+
+##### Download presentation
+[PowerPoint](https://jparker.nyc3.digitaloceanspaces.com/john_parker_thesis_defense.pptx)
