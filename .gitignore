@@ -30,3 +30,5 @@ _site
 
 *.log
 *.h5
+
+_code/
