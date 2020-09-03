@@ -12,4 +12,4 @@ In this talk, I will demonstrate the fundamental properties and applications of 
 {: style="text-align: justify;"}
 
 ##### Download presentation
-[PowerPoint](https://jparker.nyc3.digitaloceanspaces.com/john_parker_thesis_defense.pptx)
+[<i class="far fa-file-powerpoint"> PowerPoint</i>](https://jparker.nyc3.digitaloceanspaces.com/john_parker_thesis_defense.pptx)

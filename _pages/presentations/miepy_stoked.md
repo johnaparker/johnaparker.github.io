@@ -13,7 +13,7 @@ title: "Interactive tutorial for Miepy and Stoked software"
 <script src="https://gist.github.com/johnaparker/4c09b7800d55cc3f64530347a90d4af6.js"></script>
 
 ##### Download presentation
-[Introduction to Jupyter Notebooks](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/jupyter_tutorial.ipynb)  
-[Stoked Jupyter Notebook](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/stokesian_dynamics.ipynb)  
-[Miepy Jupyter Notebook](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/electrodynamics.ipynb)  
-[Utility Script](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/utility.py)
+[<i class="far fa-file-alt"> Introduction to Jupyter Notebooks</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/jupyter_tutorial.ipynb)  
+[<i class="far fa-file-alt"> Stoked Jupyter Notebook</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/stokesian_dynamics.ipynb)  
+[<i class="far fa-file-alt"> Miepy Jupyter Notebook</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/electrodynamics.ipynb)  
+[<i class="far fa-file-alt"> Utility Script</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/utility.py)
