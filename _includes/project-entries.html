@@ -2,16 +2,6 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/entry.css">
 
     {% for entry in page.entries %}
-    <div class="entry">
-
-        <h4>
-        {{ entry.title | markdownify }}
-        </h4>
-
-        <p>
-        {{ entry.description | markdownify }}
-        </p>
-    </div>
 
     <link rel="stylesheet" type="text/css" href="/assets/css/entry.css">
 
@@ -21,15 +11,17 @@
         </a>
 
         <h4>
-        {{ entry.title | markdownify }}
+        <a href="{{ entry.url }}">
+        {{ entry.title }}
+        </a>
         </h4>
 
         <p>
-            {{ entry.description | markdownify }}
+            {{ entry.description }}
             <br/>
             <a href="entry.github_url"><button class="button"><i class="fab fa-github"></i> GitHub</button></a>
-            {% for tag in page.entries.tags %}
-                <t class="tag">tag</t>
+            {% for tag in entry.tags %}
+            <t class="tag">{{ tag }}</t>
             {% endfor %}
         </p>
     </div>
