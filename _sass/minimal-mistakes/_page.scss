@@ -71,6 +71,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
+  font-size: 30px;
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -84,7 +85,7 @@ body {
 
 .page__content {
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.2em;
     border-bottom: 1px solid $border-color;
   }
 
@@ -93,7 +94,7 @@ body {
 			position: relative;
 			left: 0.5em;
 			opacity: 0;
-			font-size: 0.8em;
+			font-size: 1em;
 			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
 			-moz-transition: opacity 0.2s ease-in-out 0.1s;
 			-o-transition: opacity 0.2s ease-in-out 0.1s;
@@ -108,7 +109,7 @@ body {
   p,
   li,
   dl {
-    font-size: .8em;
+    font-size: 15px;
   }
 
   /* paragraph indents */
