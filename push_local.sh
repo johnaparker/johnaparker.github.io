@@ -1,9 +1,8 @@
 #!/bin/bash
 
 bundle exec jekyll build
-git checkout gh-pages
-git add _site
-cp -r _site/* .
+cp -r _site/* .local_build
+cd .local_build
+git add *
 git commit -am "built site locally"
 git push origin gh-pages --no-verify
-git checkout master
