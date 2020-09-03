@@ -292,76 +292,63 @@
 
       <section class="page__content" itemprop="text">
         
-        <div>
-    <link rel="stylesheet" type="text/css" href="/assets/css/entry.css" />
+        <link rel="stylesheet" type="text/css" href="/assets/css/entry.css">
 
-    
-    <div class="entry">
-        <a href="/research/optical_matter">
-            <img src="/assets/img/placeholder.png" alt="" />
-        </a>
+<div class="entry">
+    <a href="/research/optical_matter">
+    <img src="/assets/img/placeholder.png"/ alt="" >
+    </a>
 
-        <h4>
-            <a href="/research/optical_matter">
-                Optical Matter
-            </a>
-        </h4>
+    <h4>
+    Optical Matter
+    </h4>
 
-        <p>
-        Optical matter is ...
-        </p>
-    </div>
-    
-    <div class="entry">
-        <a href="/research/plasmonics">
-            <img src="/assets/img/placeholder.png" alt="" />
-        </a>
-
-        <h4>
-            <a href="/research/plasmonics">
-                Plasmonics
-            </a>
-        </h4>
-
-        <p>
-        Plasmonics is ...
-        </p>
-    </div>
-    
-    <div class="entry">
-        <a href="/research/granular">
-            <img src="/assets/img/placeholder.png" alt="" />
-        </a>
-
-        <h4>
-            <a href="/research/granular">
-                Granular Physics
-            </a>
-        </h4>
-
-        <p>
-        Granular physics is ...
-        </p>
-    </div>
-    
-    <div class="entry">
-        <a href="/research/computing">
-            <img src="/assets/img/placeholder.png" alt="" />
-        </a>
-
-        <h4>
-            <a href="/research/computing">
-                Scientific Computing
-            </a>
-        </h4>
-
-        <p>
-        ...
-        </p>
-    </div>
-    
+    <p>
+    Optical matter is ...
+    </p>
 </div>
 
+<div class="entry">
+    <a href="/research/plasmonics">
+    <img src="/assets/img/placeholder.png"/ alt="" >
+    </a>
+
+    <h4>
+    Plasmonics
+    </h4>
+
+    <p>
+    Plasmonics is ...
+    </p>
+</div>
+
+<div class="entry">
+    <a href="/research/granular">
+    <img src="/assets/img/placeholder.png"/ alt="" >
+    </a>
+
+    <h4>
+    Granular Physics
+    </h4>
+
+    <p>
+    Granular physics is ...
+    </p>
+</div>
+
+<div class="entry">
+    <a href="/research/computing">
+    <img src="/assets/img/placeholder.png"/ alt="" >
+    </a>
+
+    <h4>
+    Scientific Computing
+    </h4>
+
+    <p>
+    ...
+    </p>
+</div>
 
         
       </section>
