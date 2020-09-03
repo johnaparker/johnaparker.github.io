@@ -1,0 +1,66 @@
+<div>
+    <link rel="stylesheet" type="text/css" href="/assets/css/pub.css">
+
+    {% for entry in page.entries %}
+    <div class="pub">
+        <a href="{{ entry.url }}">
+            <img src="{{ entry.image_url }}" alt="" >
+        </a>
+
+        <h4>
+            <a href="{{ entry.url }}">
+                {{ entry.title }}
+            </a>
+        </h4>
+
+        <p>
+        {{ entry.authors }}
+        <br>
+        <i>{{ entry.journal }}</i>, {{ entry.year }}
+        </p>
+
+    </div>
+    {% endfor %}
+
+    <h2> News Coverage </h2>
+
+    {% for entry in page.news %}
+    <div class="pub">
+        <a href="{{ entry.url }}">
+            <img src="{{ entry.image_url }}" alt="" >
+        </a>
+
+        <h4>
+            <a href="{{ entry.url }}">
+                {{ entry.title }}
+            </a>
+        </h4>
+
+        <p>
+        <i>{{ entry.journal }}</i>, {{ entry.year }}
+        </p>
+
+    </div>
+    {% endfor %}
+
+    <h2> Dissertation </h2>
+
+    {% assign entry = page.dissertation[0] %}
+    <div class="pub">
+        <a href="{{ entry.url }}">
+            <img src="{{ entry.image_url }}" alt="" >
+        </a>
+
+        <h4>
+            <a href="{{ entry.url }}">
+                {{ entry.title }}
+            </a>
+        </h4>
+
+        <p>
+        {{ entry.description }}
+        </p>
+
+    </div>
+
+</div>
