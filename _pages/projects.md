@@ -7,7 +7,7 @@ entries:
   - title: MiePy
     description: Solve Maxwell's equations for a cluster of particles using the generalized multiparticle Mie theory (GMMT)
     url: https://github.com/johnaparker/miepy
-    image_url: /assets/img/miepy_thumbnail.png
+    image_url: /assets/img/projects/miepy_thumbnail.png
     github_url: https://github.com/johnaparker/miepy
     tags:
       - Python
@@ -16,7 +16,7 @@ entries:
   - title: Stoked
     description: Solves the Stokesian dynamics equations for <i>N</i> interacting particles, a generalization of Brownian dynamics that includes hydrodynamic coupling interactions.
     url: https://github.com/johnaparker/stoked
-    image_url: /assets/img/stoked_thumbnail.svg
+    image_url: /assets/img/projects/stoked_thumbnail.svg
     github_url: https://github.com/johnaparker/stoked
     tags:
       - Python
@@ -24,7 +24,7 @@ entries:
   - title: FPlanck
     description: Numerically solve the Fokker-Planck partial differential equation in <i>N</i> dimensions using a matrix numerical method
     url: https://github.com/johnaparker/fplanck
-    image_url: /assets/img/fplanck_thumbnail.png
+    image_url: /assets/img/projects/fplanck_thumbnail.png
     github_url: https://github.com/johnaparker/fplanck
     tags:
       - Python
@@ -32,7 +32,7 @@ entries:
   - title: NumPipe
     description: NumPipe is a Python software package that makes long-running tasks easier and faster by executing code in embarrassingly parallel and caching the output to HDF5 files.
     url: https://github.com/johnaparker/numpipe
-    image_url: /assets/img/numpipe_thumbnail.svg
+    image_url: /assets/img/projects/numpipe_thumbnail.svg
     github_url: https://github.com/johnaparker/numpipe
     tags:
       - Python

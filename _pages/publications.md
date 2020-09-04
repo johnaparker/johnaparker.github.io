@@ -16,7 +16,7 @@ entries:
     journal: Physical Review Letters
     year: 2020
     url: https://doi.org/10.1103/PhysRevLett.124.097402
-    image_url: /assets/img/pub_anapole.png
+    image_url: /assets/img/publications/anapole.png
 
   - title: "Designing “metamolecules” for photonic function: reduced back scattering"
     authors: Tian-Song Deng, John Parker, Yutaro Hirai, Nolan Shepherd, Hiroshi Yabu, Norbert F. Scherer
@@ -93,7 +93,7 @@ news:
     journal: "Optics & Photonics News"
     year: December 2019
     url: https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/8/1378/files/2020/02/35_OPN_12_19.pdf
-    image_url: /assets/img/pub_nonrec_news.png
+    image_url: /assets/img/publications/nonrec_news.png
 
 dissertation:
   - title: "Collective electrodynamic excitations and non-conservative dynamics in optical matter and meta-atom systems"

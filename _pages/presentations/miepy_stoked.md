@@ -4,7 +4,7 @@ title: "Interactive tutorial for Miepy and Stoked software"
 ---
 
 
-![](/assets/img/pres_miepy_stoked.png)
+![](/assets/img/presentations/miepy_stoked_header.png)
 
 <script src="https://gist.github.com/johnaparker/c7a4ee6544e37b214454b6d2cd82fdf1.js"></script>
 
