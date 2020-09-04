@@ -1,6 +1,9 @@
 ---
 permalink: /presentations/dissertation
 title: "Collective electrodynamic excitations and non-conservative dynamics in optical matter and meta-atom systems"
+header:
+    overlay_image: /assets/img/uchicago.png
+    overlay_filter: .3
 ---
 
 ##### Abstract

@@ -1,6 +1,9 @@
 ---
 permalink: /presentations/argonne_2016
 title: "Selectively inducing optical modes of nanoscale structures using vector beams in FDTD simulations"
+header:
+    overlay_image: /assets/img/presentations/argonne_2016.png
+    overlay_filter: .3
 ---
 
 ##### Abstract

@@ -1,6 +1,10 @@
 ---
 permalink: /presentations/miepy_stoked
 title: "Interactive tutorial for Miepy and Stoked software"
+classes: wide
+header:
+    overlay_image: /assets/img/presentations/miepy_stoked.png
+    overlay_filter: .3
 ---
 
 
