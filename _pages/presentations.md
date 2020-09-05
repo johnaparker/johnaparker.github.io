@@ -38,6 +38,16 @@ entries:
     url: /presentations/argonne_2016
     image_url: /assets/img/presentations/argonne_2016.png
     pdf: https://jparker.nyc3.digitaloceanspaces.com/argonne_2016.pdf
+
+  - title: Shear jamming in cornstarch suspensions 
+    description: PHYS 335, University of Chicago, June 2015
+    url: /presentations/phys335_2015
+    image_url: /assets/img/presentations/phys_335.png
+    files:
+      - label: paper
+        url: https://jparker.nyc3.digitaloceanspaces.com/phys_335/335_paper.pdf
+      - label: poster
+        url: https://jparker.nyc3.digitaloceanspaces.com/phys_335/poster.pdf
 ---
 
 {% include presentation-entries.html %}
