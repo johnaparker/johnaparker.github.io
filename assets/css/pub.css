@@ -9,7 +9,7 @@
 .pub img {
     margin-right: 15px;
     float: left;
-    border: 2px solid grey;
+    border: 1px solid black;
     border-radius: 25px;
     width: 12%;
     height: auto;

@@ -6,7 +6,7 @@ title: "Projects"
 entries:
   - title: MiePy
     description: Solve Maxwell's equations for a cluster of particles using the generalized multiparticle Mie theory (GMMT).
-    url: https://github.com/johnaparker/miepy
+    url: /projects/miepy
     image_url: /assets/img/projects/miepy_thumbnail.png
     github_url: https://github.com/johnaparker/miepy
     tags:
@@ -15,7 +15,7 @@ entries:
 
   - title: Stoked
     description: Solves the Stokesian dynamics equations for <i>N</i> interacting particles, a generalization of Brownian dynamics that includes hydrodynamic coupling interactions.
-    url: https://github.com/johnaparker/stoked
+    url: /projects/stoked
     image_url: /assets/img/projects/stoked_thumbnail.svg
     github_url: https://github.com/johnaparker/stoked
     tags:
@@ -23,7 +23,7 @@ entries:
 
   - title: FPlanck
     description: Numerically solve the Fokker-Planck partial differential equation in <i>N</i> dimensions using a matrix numerical method.
-    url: https://github.com/johnaparker/fplanck
+    url: /projects/fplanck
     image_url: /assets/img/projects/fplanck_thumbnail.png
     github_url: https://github.com/johnaparker/fplanck
     tags:
@@ -31,31 +31,31 @@ entries:
 
   - title: NumPipe
     description: NumPipe is a Python software package that makes long-running tasks easier and faster by executing code in embarrassingly parallel and caching the output to HDF5 files.
-    url: https://github.com/johnaparker/numpipe
+    url: /projects/numpipe
     image_url: /assets/img/projects/numpipe_thumbnail.svg
     github_url: https://github.com/johnaparker/numpipe
     tags:
       - Python
 
-  - title: GranSim
-    description: Granular simulation.
-    url: https://github.com/johnaparker/GranSim
-    image_url: /assets/img/placeholder.png
-    github_url: https://github.com/johnaparker/GranSim
-    tags:
-      - C++
-
   - title: QBox
     description: Custom Finite-Difference Time-Domain (FDTD) solver in two-dimensions.
-    url: https://github.com/johnaparker/qbox
+    url: /projects/qbox
     image_url: /assets/img/placeholder.png
     github_url: https://github.com/johnaparker/qbox
     tags:
       - C++
 
+  - title: GranSim
+    description: Granular simulation.
+    url: /projects/gransim
+    image_url: /assets/img/projects/gransim_thumbnail.png
+    github_url: https://github.com/johnaparker/GranSim
+    tags:
+      - C++
+
   - title: GitScan
     description: Git-Scan is a command-line utility to scan local or remote git repositories for history that is divergent from the remote branch.
-    url: https://github.com/johnaparker/git-scan
+    url: /projects/gitscan
     image_url: /assets/img/placeholder.png
     github_url: https://github.com/johnaparker/git-scan
     tags:

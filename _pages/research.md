@@ -4,22 +4,22 @@ classes: wide
 title: "Reserch Interests"
 
 entries:
-  - title: Optical Matter
+  - title: Optical trapping and optical matter
     description: Optical matter is ...
     url: /research/optical_matter
-    image_url: /assets/img/placeholder.png
+    image_url: /assets/img/research/optical_matter.mp4
 
-  - title: Plasmonics
+  - title: Plasmonics and meta-materials
     description: Plasmonics is ...
     url: /research/plasmonics
-    image_url: /assets/img/placeholder.png
+    image_url: /assets/img/research/core-sat.mp4
 
-  - title: Granular Physics
+  - title: Granular physics
     description: Granular physics is ...
     url: /research/granular
-    image_url: /assets/img/placeholder.png
+    image_url: /assets/img/research/gran.mp4
 
-  - title: Scientific Computing
+  - title: Scientific computing
     description: ...
     url: /research/computing
     image_url: /assets/img/placeholder.png

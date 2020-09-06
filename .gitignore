@@ -32,3 +32,4 @@ _site
 *.h5
 .local_build
 __pycache__
+_code/high_res_videos
