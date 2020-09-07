@@ -22,7 +22,7 @@ entries:
   - title: Scientific computing
     description: ...
     url: /research/computing
-    image_url: /assets/img/placeholder.png
+    image_url: /assets/img/research/computing.mp4
 ---
 
 {% include research-entries.html %}
