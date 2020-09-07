@@ -32,7 +32,7 @@ entries:
   - title: NumPipe
     description: NumPipe is a Python software package that makes long-running tasks easier and faster by executing code in embarrassingly parallel and caching the output to HDF5 files.
     url: /projects/numpipe
-    image_url: /assets/img/projects/numpipe_thumbnail.svg
+    image_url: /assets/img/projects/numpipe_thumbnail.png
     github_url: https://github.com/johnaparker/numpipe
     tags:
       - Python
@@ -40,7 +40,7 @@ entries:
   - title: QBox
     description: Custom Finite-Difference Time-Domain (FDTD) solver in two-dimensions.
     url: /projects/qbox
-    image_url: /assets/img/placeholder.png
+    image_url: /assets/img/projects/qbox.png
     github_url: https://github.com/johnaparker/qbox
     tags:
       - C++
@@ -56,7 +56,7 @@ entries:
   - title: GitScan
     description: Git-Scan is a command-line utility to scan local or remote git repositories for history that is divergent from the remote branch.
     url: /projects/gitscan
-    image_url: /assets/img/placeholder.png
+    image_url: /assets/img/projects/gitscan.svg
     github_url: https://github.com/johnaparker/git-scan
     tags:
       - Python
