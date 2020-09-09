@@ -13,13 +13,17 @@
     border-radius: 25px;
     width: 20%;
     height: auto;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 @media (max-width: 5in) {
     .entry img,video {
         width: 30%;
     }
+}
+
+.entry video:hover {
+    box-shadow: 0 0 10px rgba(#000, 1);
 }
 
 .entry h4 {
