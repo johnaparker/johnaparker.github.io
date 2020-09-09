@@ -4,7 +4,7 @@
     {% for entry in page.entries %}
     <div class="entry">
         <a href="{{ entry.url }}">
-            <img src="{{ entry.image_url }}" alt="" >
+        <video autoplay loop playsinline src="{{ entry.image_url }}"></video>
         </a>
 
         <h4>
@@ -16,7 +16,7 @@
         <p>
         {{ entry.description }}
         <a href="{{ entry.url }}">
-            <u>Learn more.</u>
+            <u>Read more.</u>
         </a>
         </p>
     </div>

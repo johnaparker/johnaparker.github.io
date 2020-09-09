@@ -13,8 +13,8 @@ code = """
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.linspace(0, 4*np.pi, 100)
-y = np.sin(x)
+x = np.linspace(-0.5, 0.5, 500)
+y = np.sin(1/x)
 
 ax.fill_between(x, y, where=y>0,
            color='C0', alpha=.8)
@@ -28,14 +28,15 @@ code += '\n'
 
 fig, ax = plt.subplots(figsize=(6,6))
 
-text = ax.text(-.5, 0.85, '', fontsize=25, va='top',  weight='bold', fontproperties=prop, color='white')
-x = np.linspace(0, 4*np.pi, 100)
-y = np.sin(x)
+text = ax.text(-.6, 0.85, '', fontsize=25, va='top',  weight='bold', fontproperties=prop, color='white')
+x = np.linspace(-.5, .5, 500)
+y = np.sin(1/x)
 ax.axis('off')
 
-line = ax.plot(x, y, lw=2, color='white')[0]
+line = ax.plot(x, y, lw=.4, color='white')[0]
 surf1 = ax.fill_between(x, y, where=y>0, color='C0', alpha=.8)
 surf2 = ax.fill_between(x, y, where=y<0, color='C1', alpha=.8)
+
 line.set_visible(False)
 surf1.set_visible(False)
 surf2.set_visible(False)

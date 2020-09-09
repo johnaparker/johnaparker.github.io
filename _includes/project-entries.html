@@ -16,7 +16,7 @@
         <p>
             {{ entry.description }}
             <a href="{{ entry.url }}">
-                <u>Learn more.</u>
+                <u>Read more.</u>
             </a>
 
             <br/>
@@ -28,4 +28,13 @@
     </div>
 
     {% endfor %}
+
+    <h2>Additional Projects</h2>
+    {% for project in page.additional_projects %}
+    <ul style="line-height:0.5;">
+        <li> <a href="{{ project.github_url }}"><b>{{ project.title }}</b></a>: {{ project.description }}
+        </li>
+    </ul>
+    {% endfor %}
+
 </div>

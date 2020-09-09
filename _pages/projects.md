@@ -61,14 +61,34 @@ entries:
     tags:
       - Python
 
+additional_projects:
+  - title: "pybind_examples"
+    description: Examples of pybind11 based projects (using cmake)
+    github_url: https://github.com/johnaparker/pybind_examples
+    
+  - title: "h5pp"
+    description: Basic C++ wrapper for HDF5 C library
+    github_url: https://github.com/johnaparker/h5cpp
+
+  - title: "meep_ext"
+    description: Extensions for Python Meep
+    github_url: https://github.com/johnaparker/meep_ext
+
+  - title: "Qpost"
+    description: Python library and command-line utility for QBox FDTD software
+    github_url: https://github.com/johnaparker/qpost
+
+  - title: "LatBolt"
+    description: Solve the Navier-Stokes equations using a Lattice Boltzmann method
+    github_url: https://github.com/johnaparker/LatBolt
+
+  - title: "MPI walkers"
+    description: Random walkers on a 2D grid using MPI for parallelization
+    github_url: https://github.com/johnaparker/walker_mpi
+
+  - title: "my_pytools"
+    description: Helper functions to solve common tasks in numpy, matplotlib, h5py, and vpython
+    github_url: https://github.com/johnaparker/my_pytools
 ---
 
 {% include project-entries.html %}
-
-## Additional Projects
-* [**pybind_examples**](https://github.com/johnaparker/pybind_examples):
-Examples of pybind11 based projects (using cmake)
-* [**h5cpp**](https://github.com/johnaparker/h5cpp):
-Basic C++ wrapper for HDF5 C library
-* [**meep_ext**](https://github.com/johnaparker/meep_ext):
-Extensions for Python Meep
