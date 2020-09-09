@@ -5,3 +5,11 @@ header:
     overlay_image: /assets/img/research/optical_matter.png
     overlay_filter: .3
 ---
+<style>
+.video {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+</style>
+
+<video width="50%" controls="controls" loop class="video" preload="metadata" playsinline src="/assets/img/research/optical_matter2.mp4#t=0.1"></video>
