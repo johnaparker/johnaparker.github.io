@@ -129,10 +129,7 @@ body {
     &:hover {
       text-decoration: none;
 
-      img {
-        box-shadow: 0 0 10px rgba(#000, 1);
-      }
-      video {
+      img,video {
         box-shadow: 0 0 10px rgba(#000, 1);
       }
     }
