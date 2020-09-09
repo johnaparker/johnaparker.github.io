@@ -6,17 +6,18 @@
     overflow: hidden;
 }
 
-.entry img {
+.entry img,video {
     margin-right: 15px;
     float: left;
     border: 1px solid black;
     border-radius: 25px;
     width: 20%;
     height: auto;
+    transition-duration: 0.3s;
 }
 
 @media (max-width: 5in) {
-    .entry img {
+    .entry img,video {
         width: 30%;
     }
 }
