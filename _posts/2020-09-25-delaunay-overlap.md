@@ -62,7 +62,7 @@ We would like to calculate the area of this overlap region.
 ## Measuring the area of overlap between two tessellations
 
 ### Finding the intersection of two triangles
-To find the area overlap of two tessellations, we need to be calculate the intersection of two triangles.
+To find the area overlap of two tessellations, we need to be able to calculate the intersection of two triangles.
 This is an example of clipping, and the [Clipper library](http://www.angusj.com/delphi/clipper.php) can be used to do it.
 A Python wrapper, [PyClipper](https://pypi.org/project/pyclipper/), also exists.
 If `pts_1` and `pts_2` are the `3x2` arrays of the vertices of two triangles, PyClipper can find the vertices of the intersecting polygon
