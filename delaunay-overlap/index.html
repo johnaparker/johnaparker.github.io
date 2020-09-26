@@ -1,0 +1,534 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.20.1 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Measuring the overlap of Delaunay tessellations -</title>
+<meta name="description" content="Given two or more Delaunay tessellations, you may be interested in measuring how much they overlap with one another">
+
+
+  <meta name="author" content="John Parker, PhD">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Measuring the overlap of Delaunay tessellations">
+<meta property="og:url" content="https:://johnaparker.github.io/delaunay-overlap/">
+
+
+  <meta property="og:description" content="Given two or more Delaunay tessellations, you may be interested in measuring how much they overlap with one another">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2020-09-25T00:00:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https:://johnaparker.github.io/delaunay-overlap/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "John Parker",
+      "url": "https:://johnaparker.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/projects/">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/research/">Research</a>
+            </li><li class="masthead__menu-item">
+              <a href="/publications/">Publications</a>
+            </li><li class="masthead__menu-item">
+              <a href="/presentations/">Presentations</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog/">Blog</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/img/john_avatar.png" alt="John Parker, PhD" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">John Parker, PhD</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Computational physicist</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Chicago</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/johnaparker" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:john7494@gmail.com">
+            <meta itemprop="email" content="john7494@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Measuring the overlap of Delaunay tessellations">
+    <meta itemprop="description" content="Given two or more Delaunay tessellations, you may be interested in measuring how much they overlap with one another">
+    <meta itemprop="datePublished" content="2020-09-25T00:00:00-05:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Measuring the overlap of Delaunay tessellations
+</h1>
+          
+
+<link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+
+<script type="text/javascript">
+window.MathJax = {
+  tex: {
+    packages: ['base', 'ams']
+  },
+  loader: {
+    load: ['ui/menu', '[tex]/ams']
+  }
+};
+</script>
+
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-bars"></i>  Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#looking-at-the-data">Looking at the data</a></li>
+  <li><a href="#problem-statement">Problem statement</a></li>
+  <li><a href="#constructing-truncated-delaunay-tessellations-for-the-2-particle-species">Constructing truncated Delaunay tessellations for the 2 particle species</a></li>
+  <li><a href="#measuring-the-area-of-overlap-between-two-tessellations">Measuring the area of overlap between two tessellations</a>
+    <ul>
+      <li><a href="#finding-the-intersection-of-two-triangles">Finding the intersection of two triangles</a></li>
+      <li><a href="#the-area-of-a-polygon">The area of a polygon</a></li>
+      <li><a href="#the-solution">The solution</a></li>
+    </ul>
+  </li>
+  <li><a href="#final-results">Final results</a></li>
+  <li><a href="#references">References</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="looking-at-the-data">Looking at the data</h2>
+<p>Download the HDF5 data file <a href="https://jparker.nyc3.digitaloceanspaces.com/blog/delaunay_overlap/trajectory_two_species.h5">here</a>.
+The layout of this file can be read using <a href="https://github.com/johnaparker/h5tree">h5tree</a>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> h5tree <span class="nt">-va</span> trajectory_two_species.h5
+trajectory_two_species.h5  <span class="o">(</span>2 objects<span class="o">)</span>
+├── idx  <span class="o">(</span>45,<span class="o">)</span>, int64
+└── pos  <span class="o">(</span>15000, 91, 2<span class="o">)</span>, float64
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">pos</code> array has the \((x,y)\) coordinates of 91 particles across 15,000 frames.
+The <code class="language-plaintext highlighter-rouge">idx</code> array contains integer labels for particles of species 1, of which there are 45.
+The remaining 46 particles belong to species 2.
+Here are snapshots of the particle positions for different frames, where particle species 1 are the blue particles and particle species 2 are the red particles</p>
+
+<p><img src="/assets/img/posts/delaunay_overlap/snapshots_two_species.png" alt="" class="align-center" /></p>
+
+<p>The particle array is initialized to an ordered array where the two species of particles are randomly initialized and mixed together.
+The array is driven such that, over time, the red particles move to the outside of the array and the blue particles stay towards the center of the array.</p>
+
+<h2 id="problem-statement">Problem statement</h2>
+<p>We would like to measure how much the two particle species are overlapping in a given frame.
+An overlap parameter plotted vs. time for the given data should show a decline as the transition from disorder to order occurs.</p>
+
+<h2 id="constructing-truncated-delaunay-tessellations-for-the-2-particle-species">Constructing truncated Delaunay tessellations for the 2 particle species</h2>
+<p>A Delaunay tessellation can be carried out for a set of points using <code class="language-plaintext highlighter-rouge">scipy.spatial.Delaunay</code>.
+Let’s construct the Delaunay tessellation separately for red and blue particles in the last frame and plot them on top of each other</p>
+
+<figure style="width: 350px" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/delaunay_no_truncate.svg" alt="" />
+</figure>
+
+<p>This isn’t too useful since the red tessellation overlaps fully with the blue tessellation.
+We can amend this by using a truncation distance, i.e. discarding triangles that have an edge length exceeding some distance.
+Here’s the same tessellations using a truncation distance of \(1.8\times 10^{-6}\)</p>
+
+<figure style="width: 350px" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/delaunay_truncate.svg" alt="" />
+</figure>
+
+<p>We can now clearly see that the two tessellations are completely separated, and their overlap area is zero.
+Let’s look at the same plot for frame 200</p>
+
+<figure style="width: 350px" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/delaunay_frame_200.svg" alt="" />
+</figure>
+
+<p>In this frame, we do have overlap between the two tessellations.
+We would like to calculate the area of this overlap region.</p>
+
+<h2 id="measuring-the-area-of-overlap-between-two-tessellations">Measuring the area of overlap between two tessellations</h2>
+
+<h3 id="finding-the-intersection-of-two-triangles">Finding the intersection of two triangles</h3>
+<p>To find the area overlap of two tessellations, we need to be calculate the intersection of two triangles.
+This is an example of clipping, and the <a href="http://www.angusj.com/delphi/clipper.php">Clipper library</a> can be used to do it.
+A Python wrapper, <a href="https://pypi.org/project/pyclipper/">PyClipper</a>, also exists.
+If <code class="language-plaintext highlighter-rouge">pts_1</code> and <code class="language-plaintext highlighter-rouge">pts_2</code> are the <code class="language-plaintext highlighter-rouge">3x2</code> arrays of the vertices of two triangles, PyClipper can find the vertices of the intersecting polygon</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">pc</span> <span class="o">=</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">Pyclipper</span><span class="p">()</span>
+<span class="n">pts_1</span> <span class="o">=</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">scale_to_clipper</span><span class="p">(</span><span class="n">pts_1</span><span class="p">)</span>
+<span class="n">pts_2</span> <span class="o">=</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">scale_to_clipper</span><span class="p">(</span><span class="n">pts_2</span><span class="p">)</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">AddPath</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">pts_1</span><span class="p">),</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">PT_CLIP</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">pc</span><span class="p">.</span><span class="n">AddPaths</span><span class="p">([</span><span class="nb">list</span><span class="p">(</span><span class="n">pts_2</span><span class="p">)],</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">PT_SUBJECT</span><span class="p">,</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">intersect</span> <span class="o">=</span> <span class="n">pc</span><span class="p">.</span><span class="n">Execute</span><span class="p">(</span><span class="n">pyclipper</span><span class="p">.</span><span class="n">CT_INTERSECTION</span><span class="p">,</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">PFT_EVENODD</span><span class="p">,</span> <span class="n">pyclipper</span><span class="p">.</span><span class="n">PFT_EVENODD</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">intersect</span><span class="p">:</span>
+    <span class="n">pts_i</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">pyclipper</span><span class="p">.</span><span class="n">scale_from_clipper</span><span class="p">(</span><span class="n">intersect</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</code></pre></div></div>
+<p>The calls to <code class="language-plaintext highlighter-rouge">scale_to_clipper</code> and <code class="language-plaintext highlighter-rouge">scale_from_clipper</code> are needed since the Clipper library operates on integers.
+If the triangles do not intersect, <code class="language-plaintext highlighter-rouge">intersect</code> is an empty list, otherwise it is a list where the first item is a <code class="language-plaintext highlighter-rouge">Nx2</code> array of the intersecting polygon vertices.
+As an example, here is the algorithm applied to two intersecting triangles, where the intersecting region is a polygon with 5 vertices</p>
+
+<figure style="width: 450px" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/triangle_overlap.svg" alt="" />
+</figure>
+
+<h3 id="the-area-of-a-polygon">The area of a polygon</h3>
+<p>Given the vertices of the polygon from the clipping algorithm, \((x_i, y_i)\), the area of the Polygon is given by the <a href="https://en.wikipedia.org/wiki/Polygon#Area">shoelace formula</a></p>
+
+\[A = \frac{1}{2}  \left| \sum_{i=1}^{N}x_i y_{i+1} - x_{i+1} y_{i} \right|\]
+
+<p>In code,</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">polygon_area</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mf">0.5</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">roll</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span> <span class="o">-</span> <span class="n">y</span><span class="p">.</span><span class="n">dot</span><span class="p">(</span><span class="n">np</span><span class="p">.</span><span class="n">roll</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="mi">1</span><span class="p">)))</span>
+</code></pre></div></div>
+
+<h3 id="the-solution">The solution</h3>
+<p>The overlap area between two Delaunay tessellations can be calculated using the following steps:</p>
+<ol>
+  <li>Sum over all pairs of triangles, \(T_i\) and \(T_j\), belonging to each tessellation</li>
+  <li>For each pair, use the clipping algorithm to compute their intersection polygon, \(T_i \cap T_j\)</li>
+  <li>Calculate the area of the polygon using the shoelace formula</li>
+  <li>The toal overlap area is the sum of the areas for all possible intersections</li>
+</ol>
+
+<p>This algorithm is shown applied to frame 200, where the overlap area is shaded in green</p>
+<figure style="width: 350px" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/delaunay_overlap.svg" alt="" />
+</figure>
+
+<h2 id="final-results">Final results</h2>
+<p>By applying this precedure to every frame in the dataset, we can plot the area of overlap between the two particles species as a function of time</p>
+
+<figure style="width: 450px" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/area_frame.svg" alt="" />
+</figure>
+
+<p>Sure enough, the area overlap starts high and quickly approaches zero.</p>
+
+<h2 id="references">References</h2>
+<ol>
+  <li>Area of a polygon, <a href="https://en.wikipedia.org/wiki/Polygon#Area">https://en.wikipedia.org/wiki/Polygon#Area</a></li>
+  <li>Clipper, <a href="http://www.angusj.com/delphi/clipper.php">http://www.angusj.com/delphi/clipper.php</a></li>
+  <li>PyClipper, <a href="https://pypi.org/project/pyclipper/">https://pypi.org/project/pyclipper/</a></li>
+  <li><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.Delaunay.html#scipy.spatial.Delaunay">Scipy Delaunay algorithm</a></li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#data-analysis" class="page__taxonomy-item" rel="tag">Data analysis</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#geometry" class="page__taxonomy-item" rel="tag">Geometry</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#particles" class="page__taxonomy-item" rel="tag">Particles</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-09-25T00:00:00-05:00">September 25, 2020</time></p>
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-copyright">&copy; 2020 John Parker. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

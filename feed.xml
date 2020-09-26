@@ -1,14 +1,117 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2020-09-11T14:52:42-05:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>An amazing website.</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Welcome to Jekyll!</title><link href="https:://johnaparker.github.io/blog/test-post/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2019-04-18T14:34:30-05:00</published><updated>2019-04-18T14:34:30-05:00</updated><id>https:://johnaparker.github.io/blog/test-post</id><content type="html" xml:base="https:://johnaparker.github.io/blog/test-post/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2020-09-26T02:22:36-05:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>An amazing website.</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Measuring the overlap of Delaunay tessellations</title><link href="https:://johnaparker.github.io/delaunay-overlap/" rel="alternate" type="text/html" title="Measuring the overlap of Delaunay tessellations" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https:://johnaparker.github.io/delaunay-overlap</id><content type="html" xml:base="https:://johnaparker.github.io/delaunay-overlap/">&lt;h2 id=&quot;looking-at-the-data&quot;&gt;Looking at the data&lt;/h2&gt;
+&lt;p&gt;Download the HDF5 data file &lt;a href=&quot;https://jparker.nyc3.digitaloceanspaces.com/blog/delaunay_overlap/trajectory_two_species.h5&quot;&gt;here&lt;/a&gt;.
+The layout of this file can be read using &lt;a href=&quot;https://github.com/johnaparker/h5tree&quot;&gt;h5tree&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; h5tree &lt;span class=&quot;nt&quot;&gt;-va&lt;/span&gt; trajectory_two_species.h5
+trajectory_two_species.h5  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2 objects&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+├── idx  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;45,&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, int64
+└── pos  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;15000, 91, 2&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;, float64
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><category term="blog" /><category term="Jekyll" /><category term="update" /><summary type="html">Short description</summary></entry></feed>
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pos&lt;/code&gt; array has the \((x,y)\) coordinates of 91 particles across 15,000 frames.
+The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;idx&lt;/code&gt; array contains integer labels for particles of species 1, of which there are 45.
+The remaining 46 particles belong to species 2.
+Here are snapshots of the particle positions for different frames, where particle species 1 are the blue particles and particle species 2 are the red particles&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/delaunay_overlap/snapshots_two_species.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The particle array is initialized to an ordered array where the two species of particles are randomly initialized and mixed together.
+The array is driven such that, over time, the red particles move to the outside of the array and the blue particles stay towards the center of the array.&lt;/p&gt;
+
+&lt;h2 id=&quot;problem-statement&quot;&gt;Problem statement&lt;/h2&gt;
+&lt;p&gt;We would like to measure how much the two particle species are overlapping in a given frame.
+An overlap parameter plotted vs. time for the given data should show a decline as the transition from disorder to order occurs.&lt;/p&gt;
+
+&lt;h2 id=&quot;constructing-truncated-delaunay-tessellations-for-the-2-particle-species&quot;&gt;Constructing truncated Delaunay tessellations for the 2 particle species&lt;/h2&gt;
+&lt;p&gt;A Delaunay tessellation can be carried out for a set of points using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scipy.spatial.Delaunay&lt;/code&gt;.
+Let’s construct the Delaunay tessellation separately for red and blue particles in the last frame and plot them on top of each other&lt;/p&gt;
+
+&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_no_truncate.svg&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This isn’t too useful since the red tessellation overlaps fully with the blue tessellation.
+We can amend this by using a truncation distance, i.e. discarding triangles that have an edge length exceeding some distance.
+Here’s the same tessellations using a truncation distance of \(1.8\times 10^{-6}\)&lt;/p&gt;
+
+&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_truncate.svg&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We can now clearly see that the two tessellations are completely separated, and their overlap area is zero.
+Let’s look at the same plot for frame 200&lt;/p&gt;
+
+&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_frame_200.svg&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In this frame, we do have overlap between the two tessellations.
+We would like to calculate the area of this overlap region.&lt;/p&gt;
+
+&lt;h2 id=&quot;measuring-the-area-of-overlap-between-two-tessellations&quot;&gt;Measuring the area of overlap between two tessellations&lt;/h2&gt;
+
+&lt;h3 id=&quot;finding-the-intersection-of-two-triangles&quot;&gt;Finding the intersection of two triangles&lt;/h3&gt;
+&lt;p&gt;To find the area overlap of two tessellations, we need to be calculate the intersection of two triangles.
+This is an example of clipping, and the &lt;a href=&quot;http://www.angusj.com/delphi/clipper.php&quot;&gt;Clipper library&lt;/a&gt; can be used to do it.
+A Python wrapper, &lt;a href=&quot;https://pypi.org/project/pyclipper/&quot;&gt;PyClipper&lt;/a&gt;, also exists.
+If &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pts_1&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pts_2&lt;/code&gt; are the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3x2&lt;/code&gt; arrays of the vertices of two triangles, PyClipper can find the vertices of the intersecting polygon&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pc&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pts_1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_to_clipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pts_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pts_2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_to_clipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pts_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddPath&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pts_1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PT_CLIP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;pc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AddPaths&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pts_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PT_SUBJECT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;intersect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CT_INTERSECTION&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PFT_EVENODD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PFT_EVENODD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;intersect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;pts_i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;asarray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pyclipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_from_clipper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;intersect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;The calls to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scale_to_clipper&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scale_from_clipper&lt;/code&gt; are needed since the Clipper library operates on integers.
+If the triangles do not intersect, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;intersect&lt;/code&gt; is an empty list, otherwise it is a list where the first item is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Nx2&lt;/code&gt; array of the intersecting polygon vertices.
+As an example, here is the algorithm applied to two intersecting triangles, where the intersecting region is a polygon with 5 vertices&lt;/p&gt;
+
+&lt;figure style=&quot;width: 450px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/triangle_overlap.svg&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&quot;the-area-of-a-polygon&quot;&gt;The area of a polygon&lt;/h3&gt;
+&lt;p&gt;Given the vertices of the polygon from the clipping algorithm, \((x_i, y_i)\), the area of the Polygon is given by the &lt;a href=&quot;https://en.wikipedia.org/wiki/Polygon#Area&quot;&gt;shoelace formula&lt;/a&gt;&lt;/p&gt;
+
+\[A = \frac{1}{2}  \left| \sum_{i=1}^{N}x_i y_{i+1} - x_{i+1} y_{i} \right|\]
+
+&lt;p&gt;In code,&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;polygon_area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;abs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;roll&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;the-solution&quot;&gt;The solution&lt;/h3&gt;
+&lt;p&gt;The overlap area between two Delaunay tessellations can be calculated using the following steps:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Sum over all pairs of triangles, \(T_i\) and \(T_j\), belonging to each tessellation&lt;/li&gt;
+  &lt;li&gt;For each pair, use the clipping algorithm to compute their intersection polygon, \(T_i \cap T_j\)&lt;/li&gt;
+  &lt;li&gt;Calculate the area of the polygon using the shoelace formula&lt;/li&gt;
+  &lt;li&gt;The toal overlap area is the sum of the areas for all possible intersections&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This algorithm is shown applied to frame 200, where the overlap area is shaded in green&lt;/p&gt;
+&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_overlap.svg&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;final-results&quot;&gt;Final results&lt;/h2&gt;
+&lt;p&gt;By applying this precedure to every frame in the dataset, we can plot the area of overlap between the two particles species as a function of time&lt;/p&gt;
+
+&lt;figure style=&quot;width: 450px&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/area_frame.svg&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sure enough, the area overlap starts high and quickly approaches zero.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Area of a polygon, &lt;a href=&quot;https://en.wikipedia.org/wiki/Polygon#Area&quot;&gt;https://en.wikipedia.org/wiki/Polygon#Area&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Clipper, &lt;a href=&quot;http://www.angusj.com/delphi/clipper.php&quot;&gt;http://www.angusj.com/delphi/clipper.php&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;PyClipper, &lt;a href=&quot;https://pypi.org/project/pyclipper/&quot;&gt;https://pypi.org/project/pyclipper/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.scipy.org/doc/scipy/reference/generated/scipy.spatial.Delaunay.html#scipy.spatial.Delaunay&quot;&gt;Scipy Delaunay algorithm&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><category term="Geometry" /><category term="Data analysis" /><category term="Particles" /><summary type="html">Given two or more Delaunay tessellations, you may be interested in measuring how much they overlap with one another</summary></entry></feed>
