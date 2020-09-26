@@ -386,7 +386,7 @@ We would like to calculate the area of this overlap region.</p>
 <h2 id="measuring-the-area-of-overlap-between-two-tessellations">Measuring the area of overlap between two tessellations</h2>
 
 <h3 id="finding-the-intersection-of-two-triangles">Finding the intersection of two triangles</h3>
-<p>To find the area overlap of two tessellations, we need to be calculate the intersection of two triangles.
+<p>To find the area overlap of two tessellations, we need to be able to calculate the intersection of two triangles.
 This is an example of clipping, and the <a href="http://www.angusj.com/delphi/clipper.php">Clipper library</a> can be used to do it.
 A Python wrapper, <a href="https://pypi.org/project/pyclipper/">PyClipper</a>, also exists.
 If <code class="language-plaintext highlighter-rouge">pts_1</code> and <code class="language-plaintext highlighter-rouge">pts_2</code> are the <code class="language-plaintext highlighter-rouge">3x2</code> arrays of the vertices of two triangles, PyClipper can find the vertices of the intersecting polygon</p>
