@@ -82,7 +82,7 @@ The calls to `scale_to_clipper` and `scale_from_clipper` are needed since the Cl
 If the triangles do not intersect, `intersect` is an empty list, otherwise it is a list where the first item is a `Nx2` array of the intersecting polygon vertices.
 As an example, here is the algorithm applied to two intersecting triangles, where the intersecting region is a polygon with 5 vertices
 
-<figure style="width: 450px" class="align-center">
+<figure style="width: 400px" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/triangle_overlap.svg" alt="">
 </figure> 
 
@@ -115,7 +115,7 @@ This algorithm is shown applied to frame 200, where the overlap area is shaded i
 ## Final results
 By applying this precedure to every frame in the dataset, we can plot the area of overlap between the two particles species as a function of time
 
-<figure style="width: 450px" class="align-center">
+<figure style="width: 400px" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/area_frame.svg" alt="">
 </figure> 
 
