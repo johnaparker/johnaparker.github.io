@@ -246,10 +246,14 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
-      share: true
-      related: true
+      share: false
+      related: false
+      toc: true
+      toc_sticky: true
+      toc_label: " Contents"
+      toc_icon: "bars"
   # _pages
   - scope:
       path: ""
