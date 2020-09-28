@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2020-09-28T14:41:11-05:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>An amazing website.</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Measuring the overlap of Delaunay tessellations</title><link href="https:://johnaparker.github.io/delaunay-overlap/" rel="alternate" type="text/html" title="Measuring the overlap of Delaunay tessellations" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https:://johnaparker.github.io/delaunay-overlap</id><content type="html" xml:base="https:://johnaparker.github.io/delaunay-overlap/">&lt;h2 id=&quot;looking-at-the-data&quot;&gt;Looking at the data&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2020-09-28T14:57:57-05:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>An amazing website.</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Measuring the overlap of Delaunay tessellations</title><link href="https:://johnaparker.github.io/delaunay-overlap/" rel="alternate" type="text/html" title="Measuring the overlap of Delaunay tessellations" /><published>2020-09-25T00:00:00-05:00</published><updated>2020-09-25T00:00:00-05:00</updated><id>https:://johnaparker.github.io/delaunay-overlap</id><content type="html" xml:base="https:://johnaparker.github.io/delaunay-overlap/">&lt;h2 id=&quot;looking-at-the-data&quot;&gt;Looking at the data&lt;/h2&gt;
 &lt;p&gt;Download the HDF5 data file &lt;a href=&quot;https://jparker.nyc3.digitaloceanspaces.com/blog/delaunay_overlap/trajectory_two_species.h5&quot;&gt;here&lt;/a&gt;.
 The layout of this file can be read using &lt;a href=&quot;https://github.com/johnaparker/h5tree&quot;&gt;h5tree&lt;/a&gt;:&lt;/p&gt;
 
@@ -13,7 +13,9 @@ The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;idx&lt;/c
 The remaining 46 particles belong to species 2.
 Here are snapshots of the particle positions for different frames, where particle species 1 are the blue particles and particle species 2 are the red particles&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/posts/delaunay_overlap/snapshots_two_species.png&quot; alt=&quot;&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
+&lt;figure style=&quot;width: 100%&quot; class=&quot;align-center&quot;&gt;
+  &lt;img src=&quot;/assets/img/posts/delaunay_overlap/snapshots_two_species.png&quot; alt=&quot;&quot; /&gt;
+&lt;/figure&gt;
 
 &lt;p&gt;The particle array is initialized to an ordered array where the two species of particles are randomly initialized and mixed together.
 The array is driven such that, over time, the red particles move to the outside of the array and the blue particles stay towards the center of the array.&lt;/p&gt;
@@ -26,7 +28,7 @@ An overlap parameter plotted vs. time for the given data should show a decline a
 &lt;p&gt;A Delaunay tessellation can be carried out for a set of points using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;scipy.spatial.Delaunay&lt;/code&gt;.
 Let’s construct the Delaunay tessellation separately for red and blue particles in the last frame and plot them on top of each other&lt;/p&gt;
 
-&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+&lt;figure style=&quot;width: 350px; max-width: 100%&quot; class=&quot;align-center&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_no_truncate.svg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
@@ -34,14 +36,14 @@ Let’s construct the Delaunay tessellation separately for red and blue particle
 We can amend this by using a truncation distance, i.e. discarding triangles that have an edge length exceeding some distance.
 Here’s the same tessellations using a truncation distance of \(1.8\times 10^{-6}\)&lt;/p&gt;
 
-&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+&lt;figure style=&quot;width: 350px; max-width: 100%&quot; class=&quot;align-center&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_truncate.svg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;p&gt;We can now clearly see that the two tessellations are completely separated, and their overlap area is zero.
 Let’s look at the same plot for frame 200&lt;/p&gt;
 
-&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+&lt;figure style=&quot;width: 350px; max-width: 100%&quot; class=&quot;align-center&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_frame_200.svg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
@@ -70,7 +72,7 @@ If &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pts_1&lt;/
 If the triangles do not intersect, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;intersect&lt;/code&gt; is an empty list, otherwise it is a list where the first item is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Nx2&lt;/code&gt; array of the intersecting polygon vertices.
 As an example, here is the algorithm applied to two intersecting triangles, where the intersecting region is a polygon with 5 vertices&lt;/p&gt;
 
-&lt;figure style=&quot;width: 400px&quot; class=&quot;align-center&quot;&gt;
+&lt;figure style=&quot;width: 400px; max-width: 100%&quot; class=&quot;align-center&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/delaunay_overlap/triangle_overlap.svg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
@@ -95,14 +97,14 @@ As an example, here is the algorithm applied to two intersecting triangles, wher
 &lt;/ol&gt;
 
 &lt;p&gt;This algorithm is shown applied to frame 200, where the overlap area is shaded in green&lt;/p&gt;
-&lt;figure style=&quot;width: 350px&quot; class=&quot;align-center&quot;&gt;
+&lt;figure style=&quot;width: 350px; max-width: 100%&quot; class=&quot;align-center&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/delaunay_overlap/delaunay_overlap.svg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
 &lt;h2 id=&quot;final-results&quot;&gt;Final results&lt;/h2&gt;
 &lt;p&gt;By applying this precedure to every frame in the dataset, we can plot the area of overlap between the two particles species as a function of time&lt;/p&gt;
 
-&lt;figure style=&quot;width: 400px&quot; class=&quot;align-center&quot;&gt;
+&lt;figure style=&quot;width: 400px; max-width: 100%&quot; class=&quot;align-center&quot;&gt;
   &lt;img src=&quot;/assets/img/posts/delaunay_overlap/area_frame.svg&quot; alt=&quot;&quot; /&gt;
 &lt;/figure&gt;
 
