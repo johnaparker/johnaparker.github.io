@@ -24,7 +24,9 @@ The `idx` array contains integer labels for particles of species 1, of which the
 The remaining 46 particles belong to species 2.
 Here are snapshots of the particle positions for different frames, where particle species 1 are the blue particles and particle species 2 are the red particles
 
-![](/assets/img/posts/delaunay_overlap/snapshots_two_species.png){: .align-center}
+<figure style="width: 100%" class="align-center">
+  <img src="/assets/img/posts/delaunay_overlap/snapshots_two_species.png" alt="">
+</figure> 
 
 The particle array is initialized to an ordered array where the two species of particles are randomly initialized and mixed together.
 The array is driven such that, over time, the red particles move to the outside of the array and the blue particles stay towards the center of the array.
@@ -37,7 +39,7 @@ An overlap parameter plotted vs. time for the given data should show a decline a
 A Delaunay tessellation can be carried out for a set of points using `scipy.spatial.Delaunay`.
 Let's construct the Delaunay tessellation separately for red and blue particles in the last frame and plot them on top of each other
 
-<figure style="width: 350px" class="align-center">
+<figure style="width: 350px; max-width: 100%" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/delaunay_no_truncate.svg" alt="">
 </figure> 
 
@@ -45,14 +47,14 @@ This isn't too useful since the red tessellation overlaps fully with the blue te
 We can amend this by using a truncation distance, i.e. discarding triangles that have an edge length exceeding some distance.
 Here's the same tessellations using a truncation distance of $$1.8\times 10^{-6}$$ 
 
-<figure style="width: 350px" class="align-center">
+<figure style="width: 350px; max-width: 100%" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/delaunay_truncate.svg" alt="">
 </figure> 
 
 We can now clearly see that the two tessellations are completely separated, and their overlap area is zero.
 Let's look at the same plot for frame 200
 
-<figure style="width: 350px" class="align-center">
+<figure style="width: 350px; max-width: 100%" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/delaunay_frame_200.svg" alt="">
 </figure> 
 
@@ -82,7 +84,7 @@ The calls to `scale_to_clipper` and `scale_from_clipper` are needed since the Cl
 If the triangles do not intersect, `intersect` is an empty list, otherwise it is a list where the first item is a `Nx2` array of the intersecting polygon vertices.
 As an example, here is the algorithm applied to two intersecting triangles, where the intersecting region is a polygon with 5 vertices
 
-<figure style="width: 400px" class="align-center">
+<figure style="width: 400px; max-width: 100%" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/triangle_overlap.svg" alt="">
 </figure> 
 
@@ -108,14 +110,14 @@ The overlap area between two Delaunay tessellations can be calculated using the 
 4. The toal overlap area is the sum of the areas for all possible intersections
 
 This algorithm is shown applied to frame 200, where the overlap area is shaded in green
-<figure style="width: 350px" class="align-center">
+<figure style="width: 350px; max-width: 100%" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/delaunay_overlap.svg" alt="">
 </figure> 
 
 ## Final results
 By applying this precedure to every frame in the dataset, we can plot the area of overlap between the two particles species as a function of time
 
-<figure style="width: 400px" class="align-center">
+<figure style="width: 400px; max-width: 100%" class="align-center">
   <img src="/assets/img/posts/delaunay_overlap/area_frame.svg" alt="">
 </figure> 
 
