@@ -1,6 +1,7 @@
 ---
 title: "Measuring the overlap of Delaunay tessellations"
 excerpt: "Given two or more Delaunay tessellations, you may be interested in measuring how much they overlap with one another"
+image_url: /assets/img/posts/delaunay_overlap/delaunay_overlap.svg
 
 tags:
   - Geometry
