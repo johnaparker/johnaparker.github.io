@@ -16,7 +16,7 @@ header:
 
 <script src="https://gist.github.com/johnaparker/4c09b7800d55cc3f64530347a90d4af6.js"></script>
 
-##### Download presentation
+## Download presentation
 [<i class="far fa-file-alt"> Introduction to Jupyter Notebooks</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/jupyter_tutorial.ipynb)  
 [<i class="far fa-file-alt"> Stoked Jupyter Notebook</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/stokesian_dynamics.ipynb)  
 [<i class="far fa-file-alt"> Miepy Jupyter Notebook</i>](https://jparker.nyc3.digitaloceanspaces.com/miepy_stoked/electrodynamics.ipynb)  

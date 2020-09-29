@@ -122,7 +122,7 @@
   }
 
   img {
-    max-width: 62%;
+    max-width: 170px;
     border-radius: 10%;
     @include breakpoint($large) {
       border: 1px solid black;
@@ -131,7 +131,7 @@
 
   @media (max-width: 1000px) {
   img {
-    max-width: 100%;
+    width: 80px;
 
     @include breakpoint($large) {
       padding: 0px;
