@@ -18,11 +18,9 @@
       </div>
     {% endif %}
 
-    {% if post.image_url %}
     <a href="{{ post.url }}">
-        <img src="{{ post.image_url }}" alt="" >
+        <img src="{{ post.image_url | default: "/assets/img/blank.png" }}" alt="" >
     </a>
-    {% endif %}
 
     <h2 class="archive__item-title no_toc" itemprop="headline">
       {% if post.link %}

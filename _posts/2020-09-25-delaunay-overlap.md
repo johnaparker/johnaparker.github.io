@@ -7,6 +7,8 @@ tags:
   - Geometry
   - Data analysis
   - Particles
+
+github_url: https://github.com/johnaparker/blog/tree/master/delaunay_area_overlap
 ---
 
 ## Looking at the data

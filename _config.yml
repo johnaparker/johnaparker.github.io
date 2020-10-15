@@ -246,7 +246,8 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      show_date: true
+      read_time: true
       comments: # true
       share: false
       related: false
@@ -254,6 +255,7 @@ defaults:
       toc_sticky: true
       toc_label: " Contents"
       toc_icon: "bars"
+      permalink: "/blog/:title"
   # _pages
   - scope:
       path: ""

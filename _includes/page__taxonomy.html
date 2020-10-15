@@ -1,3 +1,8 @@
+{% if site.category_archive.type and page.github_url %}
+  <hr>
+  {% include code-link.html %}
+{% endif %}
+
 {% if site.tag_archive.type and page.tags[0] %}
   {% include tag-list.html %}
 {% endif %}

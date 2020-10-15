@@ -8,10 +8,10 @@ entries:
     authors: John Parker, Curtis W. Peterson, Yuval Yifat, Stuart A. Rice, Zijie Yan, Stephen K. Gray, Norbert F. Scherer
     journal: Optica
     year: 2020
-    url: /404
+    url: https://doi.org/10.1364/OPTICA.396147
     image_url: /assets/img/publications/om_machine.png
 
-  - title: "Excitation of electrodynamic anapole modes in dielectric nanospheres"
+  - title: "Excitation of nonradiating anapoles in dielectric nanospheres"
     authors: John Parker, Hiroshi Sugimoto, Brighton Coe, Daniel Eggena, Minoru Fujii, Norbert F. Scherer, Stephen K. Gray, Uttam Manna
     journal: Physical Review Letters
     year: 2020
@@ -68,14 +68,14 @@ entries:
     image_url: /assets/img/publications/negative_optical_torque.png
 
   - title: "Optical magnetism in core-satellite nanostructures excited by vector beams"
-    authors: John Parker, Stephen Gray, Norbert F. Scherer
+    authors: John Parker, Stephen K. Gray, Norbert F. Scherer
     journal: SPIE, Photonic and Phononic Properties of Engineered Nanostructures VIII
     year: 2018
     url: https://doi.org/10.1117/12.2290877
     image_url: /assets/img/publications/spie_optical_magnetism.png
 
   - title: "Multipolar analysis of electric and magnetic modes excited by vector beams in core-satellite nano-structures"
-    authors: John Parker, Stephen Gray, Norbert F. Scherer
+    authors: John Parker, Stephen K. Gray, Norbert F. Scherer
     journal: arXiv
     year: 2017
     url: https://arxiv.org/abs/1711.06833
@@ -89,6 +89,11 @@ entries:
     image_url: /assets/img/publications/optical_magnetism.png
 
 news:
+  - title: "Nanoscale machines convert light into work"
+    journal: "The Optical Society"
+    year: October 2020
+    url: https://scitechdaily.com/optical-matter-machine-nanoscale-machines-convert-light-into-work/
+    image_url: /assets/img/publications/machine_news.png
   - title: "Nonreciprocal forces on optically trapped nanoparticles"
     journal: "Optics & Photonics News"
     year: December 2019

@@ -66,9 +66,13 @@ additional_projects:
     description: Examples of pybind11 based projects (using cmake)
     github_url: https://github.com/johnaparker/pybind_examples
     
-  - title: "h5pp"
+  - title: "h5cpp"
     description: Basic C++ wrapper for HDF5 C library
     github_url: https://github.com/johnaparker/h5cpp
+
+  - title: "h5tree"
+    description: HDF5 tree command line utility
+    github_url: https://github.com/johnaparker/h5tree
 
   - title: "meep_ext"
     description: Extensions for Python Meep
