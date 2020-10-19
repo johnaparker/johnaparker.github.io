@@ -393,7 +393,7 @@ This is the hardware I’m using to produce the results in this post:</p>
 
 <h2 id="measuring-runtime-performance">Measuring runtime performance</h2>
 <p>To measure the runtime performance of a function, we will define <code class="language-plaintext highlighter-rouge">time_function</code> that calls the function many times, similar to IPython’s <code class="language-plaintext highlighter-rouge">timeit</code>.
-<code class="language-plaintext highlighter-rouge">time_function</code> is written such that it will not run longer than 0.1 seconds or the runtime of a single function call.</p>
+The <code class="language-plaintext highlighter-rouge">time_function</code> is written such that it will not run longer than 0.1 seconds or the runtime of a single function call.</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">time_function</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">runtime</span><span class="o">=</span><span class="p">.</span><span class="mi">1</span><span class="p">):</span>
     <span class="s">"""Time a function by running it repeatedly for at least 'runtime' seconds"""</span>
     <span class="n">start</span> <span class="o">=</span> <span class="n">timer</span><span class="p">()</span>
