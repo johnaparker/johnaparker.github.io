@@ -40,6 +40,12 @@
         <i>{{ entry.journal }}</i>, {{ entry.year }}
         </p>
 
+        {% if entry.tags %}
+            {% for tag in entry.tags %}
+            <a href="{{ tag.url }}"><button class="button"><i class="far fa-file-alt"></i> {{ tag.label }}</button></a>
+            {% endfor %}
+        {% endif %}
+
     </div>
     {% endfor %}
 

@@ -1,6 +1,7 @@
 ---
 title: "FFT performance using NumPy, PyFFTW, and cuFFT"
 excerpt: "Compare the performance of different FFT implementations, using Python"
+image_url: /assets/img/posts/fft_performance/thumbnail.svg
 
 tags:
   - Performance
@@ -37,7 +38,7 @@ This is the hardware I'm using to produce the results in this post:
 
 ## Measuring runtime performance
 To measure the runtime performance of a function, we will define `time_function` that calls the function many times, similar to IPython's `timeit`.
-`time_function` is written such that it will not run longer than 0.1 seconds or the runtime of a single function call.
+The `time_function` is written such that it will not run longer than 0.1 seconds or the runtime of a single function call.
 ```python
 def time_function(func, runtime=.1):
     """Time a function by running it repeatedly for at least 'runtime' seconds"""

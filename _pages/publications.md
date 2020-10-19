@@ -92,8 +92,22 @@ news:
   - title: "Nanoscale machines convert light into work"
     journal: "The Optical Society"
     year: October 2020
-    url: https://scitechdaily.com/optical-matter-machine-nanoscale-machines-convert-light-into-work/
+    url: https://www.osa.org/en-us/about_osa/newsroom/news_releases/2020/nanoscale_machines_convert_light_into_work/
     image_url: /assets/img/publications/machine_news.png
+    tags:
+      - label: Nature
+        url: https://www.nature.com/articles/d41586-020-02902-4
+      - label: OSA
+        url: https://www.osa.org/en-us/about_osa/newsroom/news_releases/2020/nanoscale_machines_convert_light_into_work/
+      - label: SciTech
+        url: https://scitechdaily.com/optical-matter-machine-nanoscale-machines-convert-light-into-work/
+      - label: ScienceDaily
+        url: https://www.sciencedaily.com/releases/2020/10/201008104259.htm
+      - label: "Phys.org"
+        url: https://phys.org/news/2020-10-nanoscale-machines.html
+      - label: EurekAlert!
+        url: https://www.eurekalert.org/pub_releases/2020-10/tos-nmc100520.php
+
   - title: "Nonreciprocal forces on optically trapped nanoparticles"
     journal: "Optics & Photonics News"
     year: December 2019
