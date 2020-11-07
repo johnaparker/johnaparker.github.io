@@ -4,6 +4,16 @@ classes: wide
 title: "Projects"
 
 entries:
+  - title: VDynamics
+    description: Realtime visualization of 2D and 3D dynamics of a large number of objects using OpenGL.
+    url: /projects/vdynamics
+    image_url: /assets/img/projects/vdynamics_teaser.png
+    github_url: https://github.com/johnaparker/vdynamics
+    tags:
+      - Python
+      - C++
+      - OpenGL
+
   - title: MiePy
     description: Solve Maxwell's equations for a cluster of particles using the generalized multiparticle Mie theory (GMMT).
     url: /projects/miepy

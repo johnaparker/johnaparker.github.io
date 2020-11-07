@@ -211,11 +211,19 @@ body {
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
+      text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
+    }
+
+    .btn {
+        background-color: rgba(170,170,170,.1);
+        &:hover {
+            background-color: rgba(170,170,170,.5);
+        }
     }
 
     .page__lead {
       max-width: $medium;
+          text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black; 
     }
 
     .page__title {
