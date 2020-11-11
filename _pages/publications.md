@@ -99,6 +99,8 @@ news:
         url: https://www.nature.com/articles/d41586-020-02902-4
       - label: OSA
         url: https://www.osa.org/en-us/about_osa/newsroom/news_releases/2020/nanoscale_machines_convert_light_into_work/
+      - label: "Physics World"
+        url: https://physicsworld.com/a/optical-matter-machine-steps-up-a-gear/
       - label: SciTech
         url: https://scitechdaily.com/optical-matter-machine-nanoscale-machines-convert-light-into-work/
       - label: ScienceDaily
