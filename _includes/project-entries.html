@@ -3,21 +3,21 @@
 
     {% for entry in page.entries %}
     <div class="entry">
-        <a href="{{ entry.url }}">
+        <a href="{{ entry.github_url }}">
             <img src="{{ entry.image_url }}" alt="" >
         </a>
 
         <h4>
-        <a href="{{ entry.url }}">
+        <a href="{{ entry.github_url }}">
         {{ entry.title }}
         </a>
         </h4>
 
         <p>
             {{ entry.description }}
-            <a href="{{ entry.url }}">
-                <u>Read more.</u>
-            </a>
+            <!--<a href="{{ entry.url }}">-->
+                <!--<u>Read more.</u>-->
+            <!--</a>-->
 
             <br/>
             <a href="{{ entry.github_url }}"><button class="button"><i class="fab fa-github"></i> GitHub</button></a>

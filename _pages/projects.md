@@ -39,6 +39,15 @@ entries:
     tags:
       - Python
 
+  - title: GranSim
+    description: Simulation of granular material dynamics in 2D and 3D using a direct element method.
+    url: /projects/gransim
+    image_url: /assets/img/projects/gransim_thumbnail.png
+    github_url: https://github.com/johnaparker/GranSim
+    tags:
+      - C++
+      - Python
+
   - title: NumPipe
     description: NumPipe is a Python software package that makes long-running tasks easier and faster by executing code in embarrassingly parallel and caching the output to HDF5 files.
     url: /projects/numpipe
@@ -52,14 +61,6 @@ entries:
     url: /projects/qbox
     image_url: /assets/img/projects/qbox.png
     github_url: https://github.com/johnaparker/qbox
-    tags:
-      - C++
-
-  - title: GranSim
-    description: Granular simulation.
-    url: /projects/gransim
-    image_url: /assets/img/projects/gransim_thumbnail.png
-    github_url: https://github.com/johnaparker/GranSim
     tags:
       - C++
 

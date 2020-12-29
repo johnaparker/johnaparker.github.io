@@ -102,16 +102,15 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/johnaparker"
+    - label: "Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=1CwIyOUAAAAJ&hl=en"
 # Site Footer
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/johnaparker"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-
 # Reading Files
 include:
   - .htaccess
