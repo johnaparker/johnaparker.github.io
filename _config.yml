@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "jparker"
+title                    : "John Parker"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "John Parker"
-description              : "An amazing website."
+description              : "John Parker"
 url                      : "https:://johnaparker.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "johnaparker/johnaparker.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
