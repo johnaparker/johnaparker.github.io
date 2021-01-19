@@ -9,27 +9,29 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>  John Parker</title>
-<meta name="description" content="John Parker">
+<!-- begin _includes/seo.html --><title>Real-time ray tracing tutorial series using NVIDIA OptiX 7 - John Parker</title>
+<meta name="description" content="A ray tracing turorial series for OptiX 7 starting from the basics and covering advanced topics from materials and real-time animation">
 
 
   <meta name="author" content="John Parker, PhD">
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="John Parker">
-<meta property="og:title" content="John Parker">
-<meta property="og:url" content="https:://johnaparker.github.io/blog/">
+<meta property="og:title" content="Real-time ray tracing tutorial series using NVIDIA OptiX 7">
+<meta property="og:url" content="https:://johnaparker.github.io/blog/optix-tutorial">
 
 
-  <meta property="og:description" content="John Parker">
-
-
-
+  <meta property="og:description" content="A ray tracing turorial series for OptiX 7 starting from the basics and covering advanced topics from materials and real-time animation">
 
 
 
+
+
+
+
+  <meta property="article:published_time" content="2021-01-14T00:00:00-06:00">
 
 
 
@@ -40,7 +42,7 @@
   
 
 
-<link rel="canonical" href="https:://johnaparker.github.io/blog/">
+<link rel="canonical" href="https:://johnaparker.github.io/blog/optix-tutorial">
 
 
 
@@ -127,7 +129,7 @@ window.MathJax = {
 
   </head>
 
-  <body class="layout--posts_simple wide">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -302,38 +304,18 @@ window.MathJax = {
 
 
 
-  <div class="archive">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Real-time ray tracing tutorial series using NVIDIA OptiX 7">
+    <meta itemprop="description" content="A ray tracing turorial series for OptiX 7 starting from the basics and covering advanced topics from materials and real-time animation">
+    <meta itemprop="datePublished" content="2021-01-14T00:00:00-06:00">
     
-      <h1 id="page-title" class="page__title"></h1>
-    
-    <p><a href="http://192.168.1.139:4000/tags">Posts by tag <i class="fas fa-tags"></i></a></p>
 
-
-
-
-
-  <section id="2021" class="taxonomy__section">
-    <div class="entries-list">
+    <div class="page__inner-wrap">
       
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-
-    <a href="/blog/optix-tutorial">
-        <img src="https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png" alt="" >
-    </a>
-
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/optix-tutorial" rel="permalink">Real-time ray tracing tutorial series using NVIDIA OptiX 7
-</a>
-      
-    </h2>
-    
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Real-time ray tracing tutorial series using NVIDIA OptiX 7
+</h1>
+          
 
 
   <p class="page__meta">
@@ -358,203 +340,301 @@ window.MathJax = {
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">A ray tracing turorial series for OptiX 7 starting from the basics and covering advanced topics from materials and real-time animation
-</p>
-
-    
-    <a href="/tags/#graphics"><button class="tag">Graphics</button></a>
-    
-    <a href="/tags/#tutorial"><button class="tag">Tutorial</button></a>
-    
-  </article>
-
-</div>
-
+        </header>
       
+
+      <section class="page__content" itemprop="text">
+        
+        <h3 id="this-is-a-work-in-progress"><strong>(This is a work in progress)</strong></h3>
+<div>
+    <link rel="stylesheet" type="text/css" href="/assets/css/tutorial.css" />
+
+    
+    <div class="tutorial">
+        <a href="/optix-tutorial/getting-started">
+            
+                <img src="https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_getting_started.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="/optix-tutorial/getting-started">
+        Getting started
+        </a>
+        </h4>
+
+        <p>
+            Configure OptiX, setup a shader binding table, and write a ray-generation and ray-miss program to render a background gradient
+            <br />
+        </p>
     </div>
-  </section>
-
-  <section id="2020" class="taxonomy__section">
-    <div class="entries-list">
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-
-    <a href="/blog/circle-graphics">
-        <img src="/assets/img/posts/circle_graphics/teaser.png" alt="" >
-    </a>
-
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/circle-graphics" rel="permalink">Real-time visualization of a large number of circles using OpenGL
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
 
     
-      
-      <i class="far fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-11-07T00:00:00-06:00">November 7, 2020</time>
-    
+    <div class="tutorial">
+        <a href="/optix-tutorial/triangle">
+            
+                <img src="https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png" alt="" />
+            
+        </a>
 
-    
-      
-      <span class="post__meta-sep"></span>
-      
-    
+        <h4>
+        <a href="/optix-tutorial/triangle">
+        Rendering a triangle
+        </a>
+        </h4>
 
-
-    
-    <i class="fab fa-fw fab fa-github"></i> <a href=https://github.com/johnaparker/blog/tree/master/circle_animation>View Code</a>
-    
-
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">When using Matplotlib, animations of a large number of circles becomes slow. Using OpenGL, over a million circles can be animated in realtime.
-</p>
-
-    
-    <a href="/tags/#graphics"><button class="tag">Graphics</button></a>
-    
-    <a href="/tags/#performance"><button class="tag">Performance</button></a>
-    
-    <a href="/tags/#particles"><button class="tag">Particles</button></a>
-    
-  </article>
-
-</div>
-
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-
-    <a href="/blog/fft_2d_performance">
-        <img src="/assets/img/posts/fft_performance/thumbnail.svg" alt="" >
-    </a>
-
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/fft_2d_performance" rel="permalink">FFT performance using NumPy, PyFFTW, and cuFFT
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-10-14T00:00:00-05:00">October 14, 2020</time>
-    
-
-    
-      
-      <span class="post__meta-sep"></span>
-      
-    
-
-
-    
-    <i class="fab fa-fw fab fa-github"></i> <a href=https://github.com/johnaparker/blog/tree/master/fft_performance>View Code</a>
-    
-
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Compare the performance of different FFT implementations, using Python
-</p>
-
-    
-    <a href="/tags/#performance"><button class="tag">Performance</button></a>
-    
-    <a href="/tags/#cuda"><button class="tag">CUDA</button></a>
-    
-  </article>
-
-</div>
-
-      
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-
-    <a href="/blog/delaunay-overlap">
-        <img src="/assets/img/posts/delaunay_overlap/delaunay_overlap.svg" alt="" >
-    </a>
-
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/delaunay-overlap" rel="permalink">Measuring the overlap of Delaunay tessellations
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-
-    
-      
-      <i class="far fa-calendar-alt" aria-hidden="true"></i>
-      <time datetime="2020-09-25T00:00:00-05:00">September 25, 2020</time>
-    
-
-    
-      
-      <span class="post__meta-sep"></span>
-      
-    
-
-
-    
-    <i class="fab fa-fw fab fa-github"></i> <a href=https://github.com/johnaparker/blog/tree/master/delaunay_area_overlap>View Code</a>
-    
-
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Given two or more Delaunay tessellations, you may be interested in measuring how much they overlap with one another
-</p>
-
-    
-    <a href="/tags/#geometry"><button class="tag">Geometry</button></a>
-    
-    <a href="/tags/#data-analysis"><button class="tag">Data analysis</button></a>
-    
-    <a href="/tags/#particles"><button class="tag">Particles</button></a>
-    
-  </article>
-
-</div>
-
-      
+        <p>
+            Write vertex data to the GPU, build an acceleration structure, and write a closest-hit program to render a single triangle
+            <br />
+        </p>
     </div>
-  </section>
 
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
 
-  </div>
+        <h4>
+        <a href="">
+        (In Progress) Making a custom primitive: ray-sphere intersection
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Light sources and basic shading
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Advanced shading: metals, glass, and shadows
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Animations: rebuilding and refining the acceleration structure
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Rendering a large collection of objects
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Implementing a path tracer
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Textures and models
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+    <div class="tutorial">
+        <a href="">
+            
+                <img src="/assets/img/placeholder.png" alt="" />
+            
+        </a>
+
+        <h4>
+        <a href="">
+        (In Progress) Using Bullet to do real-time physics
+        </a>
+        </h4>
+
+        <p>
+            
+            <br />
+        </p>
+    </div>
+
+    
+
 </div>
+
+<h2 id="extra">Extra</h2>
+<ol>
+  <li><a href="">(In Progress) Implementing a user-controlled camera</a></li>
+  <li><a href="">(In Progress) Denoising</a></li>
+  <li><a href="">(In Progress) Exporting to image or video</a></li>
+  <li><a href="">(In Progress) A high-level Python interface using pybind11</a></li>
+</ol>
+
+<h2 id="resources">Resources</h2>
+<ul>
+  <li><a href="https://developer.nvidia.com/blog/how-to-get-started-with-optix-7/">How to get started with OptiX 7</a></li>
+  <li><a href="https://raytracing-docs.nvidia.com/optix7/guide/index.html#preface#">NVIDIA OptiX 7 programming guide</a></li>
+  <li><a href="https://github.com/ingowald/optix7course">Ingo Wald’s OptiX 7 Course</a></li>
+  <li><a href="https://raytracing.github.io">Peter Shirley’s Ray Tracing in One Weekend Series</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  <hr>
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+  <strong><i class="fab fa-github" aria-hidden="true"></i> <a href="https://github.com/johnaparker/blog/tree/master/circle_animation">View Code</a></strong>
+  </p>
+
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#graphics" class="page__taxonomy-item" rel="tag">Graphics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#tutorial" class="page__taxonomy-item" rel="tag">Tutorial</a>
+    
+    </span>
+  </p>
+
+
+
+
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-01-14T00:00:00-06:00">January 14, 2021</time></p>
+
+
+      </footer>
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
     </div>
 
     
