@@ -1,0 +1,33 @@
+<div>
+    <style>
+        .checked {
+          color: #cca831;
+        }
+    </style>
+
+    {% for entry in page.ratings %}
+        <b>{{ entry.title }}</b>
+        <div>
+        {% assign N = entry.rating | divided_by: 2 %}
+        {% for index in (1..N) %}
+            <i class="fas fa-star checked"></i>
+        {% endfor %}
+
+        {% assign half = entry.rating | modulo: 2 %}
+        {% if half == 1 %}
+            <i class="fas fa-star-half-alt checked"></i>
+        {% endif %}
+
+        {% assign M = 5 | minus: N | minus: half %}
+        {% for index in (1..M) %}
+            <i class="far fa-star checked"></i>
+        {% endfor %}
+        </div>
+        {% if entry.review %}
+            <i>{{ entry.review }}</i>
+            <br>
+        {% endif %}
+
+        <br>
+    {% endfor %}
+</div>

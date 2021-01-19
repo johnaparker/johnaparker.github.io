@@ -1,0 +1,28 @@
+<div>
+    <link rel="stylesheet" type="text/css" href="/assets/css/tutorial.css">
+
+    {% for entry in page.entries %}
+    <div class="tutorial">
+        <a href="{{ entry.url }}">
+            {% if entry.teaser %}
+                <img src="{{ entry.teaser }}" alt="" >
+            {% else %}
+                <img src="/assets/img/placeholder.png" alt="" >
+            {% endif %}
+        </a>
+
+        <h4>
+        <a href="{{ entry.url }}">
+        {{ entry.title }}
+        </a>
+        </h4>
+
+        <p>
+            {{ entry.description }}
+            <br/>
+        </p>
+    </div>
+
+    {% endfor %}
+
+</div>

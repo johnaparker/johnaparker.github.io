@@ -1,5 +1,5 @@
 ---
-title: "Realtime visualization of a large number of circles using OpenGL"
+title: "Real-time visualization of a large number of circles using OpenGL"
 excerpt: "When using Matplotlib, animations of a large number of circles becomes slow. Using OpenGL, over a million circles can be animated in realtime."
 image_url: /assets/img/posts/circle_graphics/teaser.png
 

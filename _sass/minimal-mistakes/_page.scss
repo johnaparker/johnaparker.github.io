@@ -362,11 +362,11 @@ body {
 }
 
 .taxonomy__section {
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  margin-bottom: 0em;
+  padding-bottom: 0em;
 
   &:not(:last-child) {
-    border-bottom: solid 1px $border-color;
+    border-bottom: solid 0px $border-color;
   }
 
   .archive__item-title {
@@ -379,7 +379,7 @@ body {
   }
 
   + .taxonomy__section {
-    margin-top: 2em;
+    margin-top: 0em;
   }
 }
 
