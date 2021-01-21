@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2021-01-19T01:30:50-06:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>John Parker</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Real-time ray tracing tutorial series using NVIDIA OptiX 7</title><link href="https:://johnaparker.github.io/blog/optix-tutorial" rel="alternate" type="text/html" title="Real-time ray tracing tutorial series using NVIDIA OptiX 7" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https:://johnaparker.github.io/blog/optix-tutorial</id><content type="html" xml:base="https:://johnaparker.github.io/blog/optix-tutorial">&lt;h3 id=&quot;this-is-a-work-in-progress&quot;&gt;&lt;strong&gt;(This is a work in progress)&lt;/strong&gt;&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2021-01-20T18:42:06-06:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>John Parker</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Real-time ray tracing tutorial series using NVIDIA OptiX 7</title><link href="https:://johnaparker.github.io/blog/optix-tutorial" rel="alternate" type="text/html" title="Real-time ray tracing tutorial series using NVIDIA OptiX 7" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https:://johnaparker.github.io/blog/optix-tutorial</id><content type="html" xml:base="https:://johnaparker.github.io/blog/optix-tutorial">&lt;h3 id=&quot;this-is-a-work-in-progress&quot;&gt;&lt;strong&gt;(This is a work in progress)&lt;/strong&gt;&lt;/h3&gt;
 &lt;div&gt;
     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/tutorial.css&quot; /&gt;
 
@@ -24,14 +24,14 @@
 
     
     &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;/optix-tutorial/triangle&quot;&gt;
+        &lt;a href=&quot;&quot;&gt;
             
                 &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
-        &lt;a href=&quot;/optix-tutorial/triangle&quot;&gt;
+        &lt;a href=&quot;&quot;&gt;
         Rendering a triangle
         &lt;/a&gt;
         &lt;/h4&gt;
@@ -46,13 +46,53 @@
     &lt;div class=&quot;tutorial&quot;&gt;
         &lt;a href=&quot;&quot;&gt;
             
+                &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_sphere.png&quot; alt=&quot;&quot; /&gt;
+            
+        &lt;/a&gt;
+
+        &lt;h4&gt;
+        &lt;a href=&quot;&quot;&gt;
+        Making a custom primitive: ray-sphere intersection
+        &lt;/a&gt;
+        &lt;/h4&gt;
+
+        &lt;p&gt;
+            Write a ray-intersection program, create a custom primitive, and render a sphere using the intersection point and surface normal vector
+            &lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+    
+    &lt;div class=&quot;tutorial&quot;&gt;
+        &lt;a href=&quot;&quot;&gt;
+            
                 &lt;img src=&quot;/assets/img/placeholder.png&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
         &lt;a href=&quot;&quot;&gt;
-        (In Progress) Making a custom primitive: ray-sphere intersection
+        Light sources and basic shading
+        &lt;/a&gt;
+        &lt;/h4&gt;
+
+        &lt;p&gt;
+            Combine triangle meshes and spheres to create a scene with ambient, diffuse, and specular lighting
+            &lt;br /&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+
+    
+    &lt;div class=&quot;tutorial&quot;&gt;
+        &lt;a href=&quot;&quot;&gt;
+            
+                &lt;img src=&quot;/assets/img/placeholder.png&quot; alt=&quot;&quot; /&gt;
+            
+        &lt;/a&gt;
+
+        &lt;h4&gt;
+        &lt;a href=&quot;&quot;&gt;
+        Advanced shading: metals, glass, and shadows
         &lt;/a&gt;
         &lt;/h4&gt;
 
@@ -72,7 +112,7 @@
 
         &lt;h4&gt;
         &lt;a href=&quot;&quot;&gt;
-        (In Progress) Light sources and basic shading
+        Animations: rebuilding and refining the acceleration structure
         &lt;/a&gt;
         &lt;/h4&gt;
 
@@ -92,7 +132,7 @@
 
         &lt;h4&gt;
         &lt;a href=&quot;&quot;&gt;
-        (In Progress) Advanced shading: metals, glass, and shadows
+        Rendering a large collection of objects
         &lt;/a&gt;
         &lt;/h4&gt;
 
@@ -112,7 +152,7 @@
 
         &lt;h4&gt;
         &lt;a href=&quot;&quot;&gt;
-        (In Progress) Animations: rebuilding and refining the acceleration structure
+        Implementing a path tracer
         &lt;/a&gt;
         &lt;/h4&gt;
 
@@ -132,7 +172,7 @@
 
         &lt;h4&gt;
         &lt;a href=&quot;&quot;&gt;
-        (In Progress) Rendering a large collection of objects
+        Textures and models
         &lt;/a&gt;
         &lt;/h4&gt;
 
@@ -152,47 +192,7 @@
 
         &lt;h4&gt;
         &lt;a href=&quot;&quot;&gt;
-        (In Progress) Implementing a path tracer
-        &lt;/a&gt;
-        &lt;/h4&gt;
-
-        &lt;p&gt;
-            
-            &lt;br /&gt;
-        &lt;/p&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;&quot;&gt;
-            
-                &lt;img src=&quot;/assets/img/placeholder.png&quot; alt=&quot;&quot; /&gt;
-            
-        &lt;/a&gt;
-
-        &lt;h4&gt;
-        &lt;a href=&quot;&quot;&gt;
-        (In Progress) Textures and models
-        &lt;/a&gt;
-        &lt;/h4&gt;
-
-        &lt;p&gt;
-            
-            &lt;br /&gt;
-        &lt;/p&gt;
-    &lt;/div&gt;
-
-    
-    &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;&quot;&gt;
-            
-                &lt;img src=&quot;/assets/img/placeholder.png&quot; alt=&quot;&quot; /&gt;
-            
-        &lt;/a&gt;
-
-        &lt;h4&gt;
-        &lt;a href=&quot;&quot;&gt;
-        (In Progress) Using Bullet to do real-time physics
+        Using Bullet to do real-time physics
         &lt;/a&gt;
         &lt;/h4&gt;
 
@@ -208,10 +208,10 @@
 
 &lt;h2 id=&quot;extra&quot;&gt;Extra&lt;/h2&gt;
 &lt;ol&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;(In Progress) Implementing a user-controlled camera&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;(In Progress) Denoising&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;(In Progress) Exporting to image or video&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;&quot;&gt;(In Progress) A high-level Python interface using pybind11&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Implementing a user-controlled camera&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Denoising&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;Exporting to image or video&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&gt;A high-level Python interface using pybind11&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
