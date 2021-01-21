@@ -10,7 +10,7 @@ tags:
   - Graphics
   - Tutorial
 
-github_url: https://github.com/johnaparker/blog/tree/master/circle_animation
+github_url: https://github.com/johnaparker/optix7tutorial
 
 entries:
   - title: "Getting started"
@@ -21,44 +21,44 @@ entries:
   - title: "Rendering a triangle"
     description: Write vertex data to the GPU, build an acceleration structure, and write a closest-hit program to render a single triangle
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png
-    url: /optix-tutorial/triangle
+    url:
 
-  - title: "(In Progress) Making a custom primitive: ray-sphere intersection"
+  - title: "Making a custom primitive: ray-sphere intersection"
+    description: Write a ray-intersection program, create a custom primitive, and render a sphere using the intersection point and surface normal vector
+    teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_sphere.png
+    url:
+
+  - title: "Light sources and basic shading"
+    description: Combine triangle meshes and spheres to create a scene with ambient, diffuse, and specular lighting
+    teaser: 
+    url:
+
+  - title: "Advanced shading: metals, glass, and shadows"
     description: 
     teaser: 
     url:
 
-  - title: "(In Progress) Light sources and basic shading"
+  - title: "Animations: rebuilding and refining the acceleration structure"
     description: 
     teaser: 
     url:
 
-  - title: "(In Progress) Advanced shading: metals, glass, and shadows"
+  - title: "Rendering a large collection of objects"
     description: 
     teaser: 
     url:
 
-  - title: "(In Progress) Animations: rebuilding and refining the acceleration structure"
+  - title: "Implementing a path tracer"
     description: 
     teaser: 
     url:
 
-  - title: "(In Progress) Rendering a large collection of objects"
+  - title: "Textures and models"
     description: 
     teaser: 
     url:
 
-  - title: "(In Progress) Implementing a path tracer"
-    description: 
-    teaser: 
-    url:
-
-  - title: "(In Progress) Textures and models"
-    description: 
-    teaser: 
-    url:
-
-  - title: "(In Progress) Using Bullet to do real-time physics"
+  - title: "Using Bullet to do real-time physics"
     description: 
     teaser: 
     url:
@@ -68,10 +68,10 @@ entries:
 {% include tutorial-entries.html %}
 
 ## Extra
-1. [(In Progress) Implementing a user-controlled camera]()
-1. [(In Progress) Denoising]()
-1. [(In Progress) Exporting to image or video]()
-1. [(In Progress) A high-level Python interface using pybind11]()
+1. [Implementing a user-controlled camera]()
+1. [Denoising]()
+1. [Exporting to image or video]()
+1. [A high-level Python interface using pybind11]()
 
 ## Resources
 * [How to get started with OptiX 7](https://developer.nvidia.com/blog/how-to-get-started-with-optix-7/)
