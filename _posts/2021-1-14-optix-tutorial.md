@@ -19,7 +19,7 @@ entries:
     url: /optix-tutorial/getting-started
 
   - title: "Rendering a triangle"
-    description: Write vertex data to the GPU, build an acceleration structure, and write a closest-hit program to render a single triangle
+    description: Write vertex data to the GPU, build a geometry acceleration structure (GAS), and write a closest-hit program to render a single triangle
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png
     url:
 
@@ -29,8 +29,8 @@ entries:
     url:
 
   - title: "Light sources and basic shading"
-    description: Combine triangle meshes and spheres to create a scene with ambient, diffuse, and specular lighting
-    teaser: 
+    description: Use an instance acceleration structure (IAS) to combine triangle meshes and spheres to create a scene with ambient, diffuse and specular lighting
+    teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_lights.png
     url:
 
   - title: "Advanced shading: metals, glass, and shadows"
