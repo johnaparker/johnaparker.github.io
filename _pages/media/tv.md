@@ -5,7 +5,8 @@ author_profile: false
 
 ratings:
   - title: Ted Lasso
-    rating: 8
+    rating: 9
+    review: "A very wholesome series where you can find youself rooting for everyone at some point."
   
   - title: The Expanse
     rating: 10

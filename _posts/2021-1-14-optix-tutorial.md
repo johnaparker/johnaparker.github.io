@@ -33,9 +33,14 @@ entries:
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_lights.png
     url:
 
-  - title: "Advanced shading: metals, glass, and shadows"
+  - title: "Advanced shading: shadows"
+    description: Introduce a second ray type, define occlusion shaders, and move the light source to cast dynamic shadows
+    teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_shadows.mp4
+    url:
+
+  - title: "Advanced shading: metals and glass"
     description: 
-    teaser: 
+    teaser:
     url:
 
   - title: "Animations: rebuilding and refining the acceleration structure"
