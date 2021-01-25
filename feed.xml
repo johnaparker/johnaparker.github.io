@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2021-01-25T13:38:30-06:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>John Parker</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Real-time ray tracing tutorial series using NVIDIA OptiX 7</title><link href="https:://johnaparker.github.io/blog/optix-tutorial" rel="alternate" type="text/html" title="Real-time ray tracing tutorial series using NVIDIA OptiX 7" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https:://johnaparker.github.io/blog/optix-tutorial</id><content type="html" xml:base="https:://johnaparker.github.io/blog/optix-tutorial">&lt;h3 id=&quot;this-is-a-work-in-progress&quot;&gt;&lt;strong&gt;(This is a work in progress)&lt;/strong&gt;&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https:://johnaparker.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https:://johnaparker.github.io/" rel="alternate" type="text/html" /><updated>2021-01-25T13:45:58-06:00</updated><id>https:://johnaparker.github.io/feed.xml</id><title type="html">John Parker</title><subtitle>John Parker</subtitle><author><name>John Parker, PhD</name><email>john7494@gmail.com</email></author><entry><title type="html">Real-time ray tracing tutorial series using NVIDIA OptiX 7</title><link href="https:://johnaparker.github.io/blog/optix-tutorial" rel="alternate" type="text/html" title="Real-time ray tracing tutorial series using NVIDIA OptiX 7" /><published>2021-01-14T00:00:00-06:00</published><updated>2021-01-14T00:00:00-06:00</updated><id>https:://johnaparker.github.io/blog/optix-tutorial</id><content type="html" xml:base="https:://johnaparker.github.io/blog/optix-tutorial">&lt;h3 id=&quot;this-is-a-work-in-progress&quot;&gt;&lt;strong&gt;(This is a work in progress)&lt;/strong&gt;&lt;/h3&gt;
 &lt;div&gt;
     &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/css/tutorial.css&quot; /&gt;
 
     
     &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;/optix-tutorial/getting-started&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/01_getting_started&quot;&gt;
             
                 &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_getting_started.png&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
-        &lt;a href=&quot;/optix-tutorial/getting-started&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/01_getting_started&quot;&gt;
         Getting started
         &lt;/a&gt;
         &lt;/h4&gt;
@@ -24,14 +24,14 @@
 
     
     &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/02_triangle&quot;&gt;
             
                 &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/02_triangle&quot;&gt;
         Rendering a triangle
         &lt;/a&gt;
         &lt;/h4&gt;
@@ -44,14 +44,14 @@
 
     
     &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/03_sphere&quot;&gt;
             
                 &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_sphere.png&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/03_sphere&quot;&gt;
         Making a custom primitive: ray-sphere intersection
         &lt;/a&gt;
         &lt;/h4&gt;
@@ -64,14 +64,14 @@
 
     
     &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/04_lights&quot;&gt;
             
                 &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_lights.png&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/04_lights&quot;&gt;
         Light sources and basic shading
         &lt;/a&gt;
         &lt;/h4&gt;
@@ -84,14 +84,14 @@
 
     
     &lt;div class=&quot;tutorial&quot;&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/05_shadows&quot;&gt;
             
                 &lt;img src=&quot;https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_shadows.mp4&quot; alt=&quot;&quot; /&gt;
             
         &lt;/a&gt;
 
         &lt;h4&gt;
-        &lt;a href=&quot;&quot;&gt;
+        &lt;a href=&quot;https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/05_shadows&quot;&gt;
         Advanced shading: shadows
         &lt;/a&gt;
         &lt;/h4&gt;
