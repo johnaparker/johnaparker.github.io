@@ -16,27 +16,27 @@ entries:
   - title: "Getting started"
     description: Configure OptiX, setup a shader binding table, and write a ray-generation and ray-miss program to render a background gradient
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_getting_started.png
-    url: /optix-tutorial/getting-started
+    url: https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/01_getting_started
 
   - title: "Rendering a triangle"
     description: Write vertex data to the GPU, build a geometry acceleration structure (GAS), and write a closest-hit program to render a single triangle
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_triangle.png
-    url:
+    url: https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/02_triangle
 
   - title: "Making a custom primitive: ray-sphere intersection"
     description: Write a ray-intersection program, create a custom primitive, and render a sphere using the intersection point and surface normal vector
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_sphere.png
-    url:
+    url: https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/03_sphere
 
   - title: "Light sources and basic shading"
     description: Use an instance acceleration structure (IAS) to combine triangle meshes and spheres to create a scene with ambient, diffuse and specular lighting
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_lights.png
-    url:
+    url: https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/04_lights
 
   - title: "Advanced shading: shadows"
     description: Introduce a second ray type, define occlusion shaders, and move the light source to cast dynamic shadows
     teaser: https://jparker.nyc3.digitaloceanspaces.com/optix-tutorial/teasers/optix_tutorial_shadows.mp4
-    url:
+    url: https://github.com/johnaparker/optix7tutorial/tree/master/tutorials/05_shadows
 
   - title: "Advanced shading: metals and glass"
     description: 
