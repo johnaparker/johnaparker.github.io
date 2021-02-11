@@ -18,5 +18,5 @@ Using the theoretical model, I demonstrate that such phase transitions can be ob
 {: style="text-align: justify;"}
 
 ## Download presentation
-[<i class="far fa-file-powerpoint"> PowerPoint</i>](https://jparker.nyc3.digitaloceanspaces.com/bag_lunch_2020.pptx)
+[<i class="far fa-file-powerpoint"> PowerPoint</i>](https://jparker.nyc3.digitaloceanspaces.com/presentations/bag_lunch_2020.pptx)
 

@@ -1,0 +1,15 @@
+<div>
+    {% for entry in page.entries %}
+        <p style="font-size: 20px;">
+        <b>{{ entry.description }} </b>
+
+        {% if entry.extra %}
+        <br>
+        <i>{{ entry.extra }}</i>
+        {% endif %}
+        </p>
+        <img src="{{ entry.image }}" alt="" >
+        <br>
+        <br>
+    {% endfor %}
+</div>

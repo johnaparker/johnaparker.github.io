@@ -119,7 +119,7 @@ news:
 dissertation:
   - title: "Collective electrodynamic excitations and non-conservative dynamics in optical matter and meta-atom systems"
     description: "University of Chicago, Department of Physics, August 2020"
-    url: https://nyc3.digitaloceanspaces.com/jparker/john_parker_thesis.pdf
+    url: https://jparker.nyc3.digitaloceanspaces.com/collective_electrodynamic_excitations_and_non-conservative_dynamics_in_optical_matter_and_meta-atom_systems.pdf
     image_url: /assets/img/uchicago.png
 ---
 
