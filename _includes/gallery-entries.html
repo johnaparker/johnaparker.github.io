@@ -1,3 +1,11 @@
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
 <div>
     {% for entry in page.entries %}
         <p style="font-size: 20px;">
@@ -8,7 +16,7 @@
         <i style='font-size: 20px;'>{{ entry.extra || markdownify }}</i>
         {% endif %}
         </p>
-        <img src="{{ entry.image }}" alt="" >
+        <img style='max-height: 400px;' src="{{ entry.image }}" alt="" class="center" >
         <br>
         <br>
     {% endfor %}
