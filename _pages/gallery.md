@@ -11,9 +11,9 @@ entries:
     extra: "Streamlines of the Poynting vector are shown around a hexagonal nanoparticle array composed of seven metal nanoparticles. The incident light is circularly polarized, generating a flow of electromagntic energy around the array that can be utilized to create a nanoscale machine. Reproduced from the paper [Optical matter machines: angular momentum conversion by collective modes in optically bound nanoparticle arrays](https://doi.org/10.1364/OPTICA.396147)."
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/optical_matter_ray_traced.png
     description: An assembly of optically bound metal nanoparticles in a tightly focused laser beam
-    extra: Image create with POV-Ray.
+    extra: Image created with POV-Ray.
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/core_satellite_transparent.png
-    description: A core-satellite nanoscale meta-atom composed of a dielectric core decorated with silver nanoparticles
+    description: A nanoscale core-satellite meta-atom composed of a dielectric core decorated with silver nanoparticles
     extra: Image created with VPython.
 ---
 

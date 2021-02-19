@@ -1,23 +1,91 @@
+<html>
+<head>
 <style>
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+div.gallery {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+div.desc {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.image-popup {
+    text-decoration: none;
+}
+
+div.gallery {
+  border: 1px solid black;
+}
+
+.mfp-bottom-bar {
+  font-size: 16px;
+}
+
+.mfp-bottom-bar a {
+    text-decoration: none;
+    color: #2389a6;
+}
+.mfp-bottom-bar a:hover {
+    text-decoration: underline;
+    color: #2389a6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
+</head>
 
-<div>
-    {% for entry in page.entries %}
-        <p style="font-size: 20px;">
-        <b>{{ entry.description }} </b>
+<body>
 
-        {% if entry.extra %}
-        <br>
-        <i style='font-size: 20px;'>{{ entry.extra || markdownify }}</i>
-        {% endif %}
-        </p>
-        <img style='max-height: 400px;' src="{{ entry.image }}" alt="" class="center" >
-        <br>
-        <br>
-    {% endfor %}
+{% for entry in page.entries %}
+<div class="responsive">
+<div class="gallery">
+    <a target="_blank" href="{{ entry.image }}" title='{{ entry.description | append: ": " | append: entry.extra | markdownify }}'>
+      <img src="{{ entry.image }}">
+  <div class="desc"> {{ entry.description }} </div>
+  </a>
 </div>
+</div>
+{% endfor %}
+
+</body>
+</html>
