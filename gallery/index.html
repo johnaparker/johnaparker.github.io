@@ -163,6 +163,8 @@ window.MathJax = {
             </li><li class="masthead__menu-item">
               <a href="/presentations/">Presentations</a>
             </li><li class="masthead__menu-item">
+              <a href="/gallery/">Gallery</a>
+            </li><li class="masthead__menu-item">
               <a href="/blog/">Blog</a>
             </li></ul>
         
@@ -321,61 +323,128 @@ window.MathJax = {
 
       <section class="page__content" itemprop="text">
         
-        <div>
-    
-        <p style="font-size: 20px;">
-        <b>Electromagnetic field contours around three metal nanoparticles </b>
+        <html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid black;
+  border-radius: 15px;
+}
 
-        
-        <br />
-        <i style="font-size: 20px;"><p>2D contours are shown in a plane parallel to the nanoparticles. A 3D contour shows the shape of the high intensity field just outside the surfaces of the nanoparticles. Image created with Paraview.</p>
-</i>
-        
-        </p>
-        <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/em_three_np_contours.png" alt="" />
-        <br />
-        <br />
-    
-        <p style="font-size: 20px;">
-        <b>Flow of electromagntic energy around a nanoscale optical matter machine </b>
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-        
-        <br />
-        <i style="font-size: 20px;"><p>Streamlines of the Poynting vector are shown around a hexagonal nanoparticle array composed of seven metal nanoparticles. The incident light is circularly polarized, generating a flow of electromagntic energy around the array that can be utilized to create a nanoscale machine. Reproduced from the paper <a href="https://doi.org/10.1364/OPTICA.396147">Optical matter machines: angular momentum conversion by collective modes in optically bound nanoparticle arrays</a>.</p>
-</i>
-        
-        </p>
-        <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/poynting_flow_optical_matter_machine.png" alt="" />
-        <br />
-        <br />
-    
-        <p style="font-size: 20px;">
-        <b>An assembly of optically bound metal nanoparticles in a tightly focused laser beam </b>
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 
-        
-        <br />
-        <i style="font-size: 20px;"><p>Image create with POV-Ray.</p>
-</i>
-        
-        </p>
-        <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/optical_matter_ray_traced.png" alt="" />
-        <br />
-        <br />
-    
-        <p style="font-size: 20px;">
-        <b>A core-satellite nanoscale meta-atom composed of a dielectric core decorated with silver nanoparticles </b>
+div.desc {
+  padding: 10px;
+  font-size: 14px;
+}
 
-        
-        <br />
-        <i style="font-size: 20px;"><p>Image created with VPython.</p>
-</i>
-        
-        </p>
-        <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/core_satellite_transparent.png" alt="" />
-        <br />
-        <br />
-    
+.image-popup {
+    text-decoration: none;
+}
+
+div.gallery {
+  border: 1px solid black;
+}
+
+.mfp-bottom-bar {
+  font-size: 16px;
+}
+
+.mfp-bottom-bar a {
+    text-decoration: none;
+    color: #2389a6;
+}
+.mfp-bottom-bar a:hover {
+    text-decoration: underline;
+    color: #2389a6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="responsive">
+<div class="gallery">
+    <a target="_blank" href="https://jparker.nyc3.digitaloceanspaces.com/gallery/em_three_np_contours.png" title="&lt;p&gt;Electromagnetic field contours around three metal nanoparticles: 2D contours are shown in a plane parallel to the nanoparticles. A 3D contour shows the shape of the high intensity field just outside the surfaces of the nanoparticles. Image created with Paraview.&lt;/p&gt;
+">
+      <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/em_three_np_contours.png" />
+  <div class="desc"> Electromagnetic field contours around three metal nanoparticles </div>
+  </a>
 </div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+    <a target="_blank" href="https://jparker.nyc3.digitaloceanspaces.com/gallery/poynting_flow_optical_matter_machine.png" title="&lt;p&gt;Flow of electromagntic energy around a nanoscale optical matter machine: Streamlines of the Poynting vector are shown around a hexagonal nanoparticle array composed of seven metal nanoparticles. The incident light is circularly polarized, generating a flow of electromagntic energy around the array that can be utilized to create a nanoscale machine. Reproduced from the paper &lt;a href=&quot;https://doi.org/10.1364/OPTICA.396147&quot;&gt;Optical matter machines: angular momentum conversion by collective modes in optically bound nanoparticle arrays&lt;/a&gt;.&lt;/p&gt;
+">
+      <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/poynting_flow_optical_matter_machine.png" />
+  <div class="desc"> Flow of electromagntic energy around a nanoscale optical matter machine </div>
+  </a>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+    <a target="_blank" href="https://jparker.nyc3.digitaloceanspaces.com/gallery/optical_matter_ray_traced.png" title="&lt;p&gt;An assembly of optically bound metal nanoparticles in a tightly focused laser beam: Image created with POV-Ray.&lt;/p&gt;
+">
+      <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/optical_matter_ray_traced.png" />
+  <div class="desc"> An assembly of optically bound metal nanoparticles in a tightly focused laser beam </div>
+  </a>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+    <a target="_blank" href="https://jparker.nyc3.digitaloceanspaces.com/gallery/core_satellite_transparent.png" title="&lt;p&gt;A nanoscale core-satellite meta-atom composed of a dielectric core decorated with silver nanoparticles: Image created with VPython.&lt;/p&gt;
+">
+      <img src="https://jparker.nyc3.digitaloceanspaces.com/gallery/core_satellite_transparent.png" />
+  <div class="desc"> A nanoscale core-satellite meta-atom composed of a dielectric core decorated with silver nanoparticles </div>
+  </a>
+</div>
+</div>
+
+
+</body>
+</html>
 
 
         
