@@ -5,7 +5,7 @@
 
         {% if entry.extra %}
         <br>
-        <i>{{ entry.extra }}</i>
+        <i style='font-size: 20px;'>{{ entry.extra || markdownify }}</i>
         {% endif %}
         </p>
         <img src="{{ entry.image }}" alt="" >
