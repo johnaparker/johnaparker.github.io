@@ -15,6 +15,13 @@ entries:
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/core_satellite_transparent.png
     description: A nanoscale core-satellite meta-atom composed of a dielectric core decorated with silver nanoparticles
     extra: Image created with VPython.
+  - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/om_alloy.png
+    description: Phase separation of four species of optically bound nanoparticles
+  - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/shear_jamming.png
+    description: Jamming and cracking of a cornstarch suspension induced by shear
+  - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/chicago_night.jpg
+    description: Chicago at night
+    extra: Taken with the Raspberry Pi HQ camera and a telephoto lens.
 ---
 
 {% include gallery-entries.html %}
