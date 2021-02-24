@@ -22,6 +22,9 @@ entries:
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/chicago_night.jpg
     description: Chicago at night
     extra: Taken with the Raspberry Pi HQ camera and a telephoto lens.
+  - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/chicago_day.jpg
+    description: Chicago at day
+    extra: Taken with the Raspberry Pi HQ camera and a telephoto lens.
 ---
 
 {% include gallery-entries.html %}
