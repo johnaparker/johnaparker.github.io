@@ -17,6 +17,10 @@ entries:
     extra: Image created with VPython.
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/om_alloy.png
     description: Phase separation of four species of optically bound nanoparticles
+  - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/stress_strain_optical_matter.svg
+    description: Elasticity of optical matter
+  - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/two_attractor_optical_matter.svg
+    description: Two neighboring dynamical attractors in an optical matter strucure
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/shear_jamming.png
     description: Jamming and cracking of a cornstarch suspension induced by shear
   - image: https://jparker.nyc3.digitaloceanspaces.com/gallery/chicago_night.jpg

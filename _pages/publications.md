@@ -4,6 +4,13 @@ classes: wide
 title: "Publications"
 
 entries:
+#  - title: "Optical matter alloys"
+#    authors: John Parker
+#    journal: none
+#    year: 2021
+#    url:
+#    image_url: https://jparker.nyc3.digitaloceanspaces.com/publications/om_alloy_teaser.svg
+
   - title: "Optical matter machines: angular momentum conversion by collective modes in optically bound nanoparticle arrays"
     authors: John Parker, Curtis W. Peterson, Yuval Yifat, Stuart A. Rice, Zijie Yan, Stephen K. Gray, Norbert F. Scherer
     journal: Optica
