@@ -11,6 +11,13 @@ entries:
 #    url:
 #    image_url: https://jparker.nyc3.digitaloceanspaces.com/publications/om_alloy_teaser.svg
 
+  - title: "Data-driven reaction coordinate discovery in overdamped and non-conservative systems: application to optical matter structural isomerization"
+    authors: Shiqi Chen, Curtis W. Peterson, John Parker, Stuart A. Rice, Andrew L. Ferguson & Norbert F. Scherer
+    journal: Nature Communications
+    year: 2021
+    url: ttps://doi.org/10.1038/s41467-021-22794-w
+    image_url: https://jparker.nyc3.digitaloceanspaces.com/publications/data_driven_reaction_teaser.png
+
   - title: "Optical matter machines: angular momentum conversion by collective modes in optically bound nanoparticle arrays"
     authors: John Parker, Curtis W. Peterson, Yuval Yifat, Stuart A. Rice, Zijie Yan, Stephen K. Gray, Norbert F. Scherer
     journal: Optica
