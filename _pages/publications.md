@@ -10,12 +10,18 @@ entries:
 #    year: 2021
 #    url:
 #    image_url: https://jparker.nyc3.digitaloceanspaces.com/publications/om_alloy_teaser.svg
+  - title: "Facile measurement of the rotation of a single optically trapped nanoparticle using the diagonal ratio of a quadrant photodiode"
+    authors: Yuval Yifat, John Parker, Tian-Song Deng, Stephen K. Gray, Stuart A. Rice & Norbert F. Scherer
+    journal: ACS Photonics
+    year: 2021
+    url: https://doi.org/10.1021/acsphotonics.1c00802
+    image_url: https://jparker.nyc3.digitaloceanspaces.com/publications/qpd_teaser.png
 
   - title: "Data-driven reaction coordinate discovery in overdamped and non-conservative systems: application to optical matter structural isomerization"
     authors: Shiqi Chen, Curtis W. Peterson, John Parker, Stuart A. Rice, Andrew L. Ferguson & Norbert F. Scherer
     journal: Nature Communications
     year: 2021
-    url: ttps://doi.org/10.1038/s41467-021-22794-w
+    url: https://doi.org/10.1038/s41467-021-22794-w
     image_url: https://jparker.nyc3.digitaloceanspaces.com/publications/data_driven_reaction_teaser.png
 
   - title: "Optical matter machines: angular momentum conversion by collective modes in optically bound nanoparticle arrays"
