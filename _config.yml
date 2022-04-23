@@ -97,7 +97,7 @@ author:
   avatar           : "/assets/img/john_avatar.png"
   bio              : "Computational scientist"
   location         : "Chicago"
-  email            : "john@johnaparker.com"
+  email            : "contact@johnaparker.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
